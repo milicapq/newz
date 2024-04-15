@@ -1,12 +1,12 @@
 import logo from "./logo.svg";
 import "./App.scss";
 import { Button } from "react-bootstrap";
+import Header from "./components/Header";
 
 function App() {
   return (
     <div className="App">
-      <p>ashjaksn</p>
-      <Button>Click</Button>
+      <Header />
     </div>
   );
 }
