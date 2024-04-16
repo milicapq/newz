@@ -1,7 +1,5 @@
-import logo from "./logo.svg";
 import "./App.scss";
-import { Button } from "react-bootstrap";
-import Header from "./components/Header";
+import Header from "./pages/components/header/Header";
 
 function App() {
   return (

@@ -1,0 +1,28 @@
+* {
+  font-family: nunito sans, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+.header {
+  .border-bottom {
+    border-bottom: 2px solid black !important;
+  }
+}
+
+h6 {
+  color: #e5e9ec;
+  font-weight: 700;
+}
+.font-color {
+  color: #c0c0c0;
+  font-size: 12px;
+}
+.fw-bold {
+  font-size: 13px;
+}
+li {
+  .nav-link {
+    color: #000000;
+  }
+}

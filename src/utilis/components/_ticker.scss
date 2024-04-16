@@ -1,0 +1,40 @@
+.marquee {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+
+  div {
+    font-size: 1rem;
+    display: inline-block;
+    color: #c0c0c0;
+    padding: 0.7rem 1.4rem;
+    position: relative;
+    transform: translateX(100%);
+    animation: marquee 7.5s linear -5.75s infinite forwards;
+  }
+
+  .marquee div:last-child {
+    animation: marquee 12.5s linear 0s infinite forwards;
+    left: 0;
+    top: 0;
+  }
+
+  @keyframes marquee {
+    0% {
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    100% {
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+  }
+  .caret-up {
+    color: #66cc33;
+  }
+  .caret-down {
+    color: #d00000;
+  }
+}
