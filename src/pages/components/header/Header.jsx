@@ -31,12 +31,12 @@ export default function Header() {
             </Col>
           </Row>
           <Row>
-            <div className="col-6">
+            <Col xs={6}>
               <div className="border-bottom d-flex align-items-center mt-4">
                 <img className="px-2" src="/envelope-icon.svg" alt="" />
                 <span className="">SUBSCRIBE</span>
               </div>
-            </div>
+            </Col>
             <div className="py-3 col-6">
               <img className="p-2 mt-2" src="/profile-icon.svg" alt="" />
               <img className="border-end p-2" src="/bag-icon.svg" alt="" />

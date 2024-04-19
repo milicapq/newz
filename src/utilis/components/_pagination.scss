@@ -1,0 +1,12 @@
+.pagination-text {
+  .border-bottom {
+    border-bottom: 1px solid #000 !important;
+  }
+  span:nth-child(even) {
+    content: "";
+    background-color: #000;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+  }
+}

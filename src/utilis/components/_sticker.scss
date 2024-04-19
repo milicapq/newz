@@ -1,0 +1,43 @@
+.sticker {
+  width: 100%;
+  background-color: #3d5c6e;
+  display: flex;
+  padding: 0.5rem 0;
+  position: relative;
+  z-index: 1;
+
+  :after {
+    content: "";
+    border-left: 25px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 50px solid#3d5c6e;
+    position: absolute;
+    right: -30px;
+    z-index: -1;
+    top: 0;
+  }
+  .fw-bold {
+    font-size: 13px;
+  }
+}
+.sticker-small {
+  min-width: 10%;
+  background-color: #3d5c6e;
+  display: flex;
+  position: relative;
+  z-index: 1;
+
+  :after {
+    content: "";
+    border-left: 10px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 28px solid#3d5c6e;
+    position: absolute;
+    right: -20px;
+    z-index: -1;
+    top: 0;
+  }
+  .fw-bold {
+    font-size: 13px;
+  }
+}
