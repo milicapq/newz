@@ -8,6 +8,9 @@
   .border-bottom {
     border-bottom: 2px solid black !important;
   }
+  .fw-bold {
+    font-size: 13px;
+  }
 }
 
 h6 {
@@ -18,9 +21,7 @@ h6 {
   color: #c0c0c0;
   font-size: 12px;
 }
-.fw-bold {
-  font-size: 13px;
-}
+
 li {
   .nav-link {
     color: #000000;

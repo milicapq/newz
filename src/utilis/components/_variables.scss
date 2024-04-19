@@ -6,5 +6,9 @@ $theme-colors: (
   "success": #19cd37,
   "dark": #2f4553,
 );
+.light-theme {
+  color: #e5e9ec;
+  font-size: 9px;
+}
 
 @import "~bootstrap/scss/bootstrap";
