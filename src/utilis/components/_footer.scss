@@ -1,4 +1,19 @@
-.flag {
+.flag,
+.circle {
   height: 35px;
   width: 35px;
+}
+.btn {
+  cursor: pointer;
+}
+.send-icon:hover {
+  background-color: #3d5c6e;
+  cursor: pointer;
+}
+.circle {
+  cursor: pointer;
+  :hover {
+    background-color: #fff;
+    color: #3d5c6e;
+  }
 }

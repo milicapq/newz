@@ -34,10 +34,10 @@ export default function TopVideos() {
           <img src="/arrow-right.svg" alt="" />
         </div>
         <Row>
-          <Col xs={8} className="border-end">
+          <Col xs={7} className="border-end">
             <TextOverCard />
           </Col>
-          <Col xs={4}>
+          <Col xs={5}>
             <span className="text-light">VIDEOS UP NEXT</span>
             {infos.map((info) => (
               <HorizontalCard info={info} key={info.label} />
