@@ -1,7 +1,6 @@
 import React from "react";
 import Sticker from "./Sticker";
 import { Row, Col } from "react-bootstrap";
-import HorizontalCard from "./HorizontalCard";
 
 export default function Card({ newz }) {
   return (
@@ -15,7 +14,7 @@ export default function Card({ newz }) {
         <h3 className="fw-bold">{newz.title}</h3>
         <p>{newz.content}</p>
         <Row>
-          <Col xs={newz.id > 2 ? "5" : "3"}>
+          <Col xs={newz?.id > 2 ? "5" : "3"}>
             <img src="/calendar-icon.svg"></img>
             <span className="ms-2">{newz.date}</span>
           </Col>

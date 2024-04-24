@@ -29,16 +29,19 @@ export default function LatestNews() {
   ];
   const trendingNews = [
     {
+      id: "3",
       title: "Elon Musk got Twitter because he gets Twitter",
       label: "NEWS",
       num: 2,
     },
     {
+      id: "4",
       title: "US. Stock Market today",
       label: "MARKET",
       num: 3,
     },
     {
+      id: "5",
       title: "Tiktok will win Facebook?",
       label: "TECHNOLOGY",
       num: 4,
@@ -47,19 +50,28 @@ export default function LatestNews() {
   return (
     <Container className="border-top mt-4">
       <Row className="mt-4">
-        <TextOverCard />
+        <Col xs={5}>
+          <TextOverCard />
+        </Col>
         <Col xs={4} className="mt-4 border-end">
           {infos.map((info) => (
             <HorizontalCard info={info} />
           ))}
+          <div className="d-flex align-items-center">
+            <span className="text-muted">See all posts</span>
+            <img src="/arrow-right.svg" alt="" />
+          </div>
         </Col>
+
         <Col xs={3}>
           <p>TRENDING POSTS</p>
-          {/* <TextOverCard /> */}
           {trendingNews.map((trending) => (
             <CardWithNum trending={trending} />
           ))}
-          <p>See all posts</p>
+          <div className="d-flex align-items-center">
+            <span className="text-muted">See all posts</span>
+            <img src="/arrow-right.svg" alt="" />
+          </div>
         </Col>
       </Row>
     </Container>
