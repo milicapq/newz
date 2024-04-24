@@ -4,7 +4,7 @@ import Sticker from "./Sticker";
 
 export default function TextOverCard() {
   return (
-    <div className="card text-white rounded-0">
+    <div className="card text-white bg-transparent rounded-0">
       <img
         src="/fabcf9f2c97e98130ca320900eb163cb.jpg"
         className="height"
