@@ -50,10 +50,11 @@ export default function LatestNews() {
   return (
     <Container className="border-top mt-4">
       <Row className="mt-4">
-        <Col xs={5}>
+        <Col md={5}>
+          <p>LATEST NEWS</p>
           <TextOverCard />
         </Col>
-        <Col xs={4} className="mt-4 border-end">
+        <Col md={4} className="mt-4 border-end">
           {infos.map((info) => (
             <HorizontalCard info={info} />
           ))}
@@ -63,7 +64,7 @@ export default function LatestNews() {
           </div>
         </Col>
 
-        <Col xs={3}>
+        <Col md={3}>
           <p>TRENDING POSTS</p>
           {trendingNews.map((trending) => (
             <CardWithNum trending={trending} />

@@ -5,19 +5,19 @@ export default function TopColumnist() {
   const columnists = [
     {
       id: 1,
-      img: "Untitled1.png",
+      img: "/top-columnist-img/Conor.png",
       name: "Conor Bradley",
       specializeIn: "BUSINESS, NEWS",
       content:
-        "My content focus into business politic that allows anyone with a cellphone to scan cultural landmarks",
+        "My content focus into business politic that allows anyone with a cellphone to scan cultural landmarks and monuments in danger",
     },
     {
       id: 2,
       img: "Untitled1.png",
       name: "Luis Diaz",
-      specializeIn: "BUSINESS, NEWS",
+      specializeIn: "POLITICS, MARKET",
       content:
-        "My content focus into business politic that allows anyone with a cellphone to scan cultural landmarks",
+        "My content focus into business politic that allows anyone with a cellphone to scan",
     },
     {
       id: 3,
@@ -25,15 +25,14 @@ export default function TopColumnist() {
       name: "Alberto Moreno",
       specializeIn: "VIDEOS, TECHNOLOGY",
       content:
-        "My content focus into business politic that allows anyone with a cellphone to scan cultural landmarks",
+        "My content focus into business politic that allows anyone with a cellphone to scan cultural landmarks and monum",
     },
     {
       id: 4,
       img: "Untitled1.png",
       name: "Darwin Nunez",
       specializeIn: "ECOMONICS",
-      content:
-        "My content focus into business politic that allows anyone with a cellphone to scan cultural landmarks",
+      content: "My content focus into business politic that allows anyone",
     },
   ];
   return (
@@ -41,7 +40,7 @@ export default function TopColumnist() {
       <Row className="mb-3">
         <p>Top columnist</p>
         {columnists.map((columnist) => (
-          <Col xs={3} key={columnist.id}>
+          <Col md={3} xs={6} key={columnist.id}>
             <Card className="border-0 border-end">
               <div className="card-body d-flex flex-column">
                 <img

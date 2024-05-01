@@ -29,7 +29,7 @@ export default function MainContent() {
     {
       id: 3,
       label: "POLITICS",
-      title: "Biden asks Congress for $33 billion to support Ukraine",
+      title: "The 6th session of the US Congress today",
       content:
         "Lorem Ipsum is simply dummy text of the printing and typesettin industry. Lorem Ipsum has been the industrys standard dummytext ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       date: "Dec 14,2022",
@@ -40,7 +40,7 @@ export default function MainContent() {
     {
       id: 4,
       label: "MARKET",
-      title: "Biden asks Congress for $33 billion to support Ukraine",
+      title: "The unexpected change of the stock market",
       content:
         "Lorem Ipsum is simply dummy text of the printing and typesettin industry. Lorem Ipsum has been the industrys standard dummytext ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       date: "Dec 14,2022",
@@ -51,7 +51,7 @@ export default function MainContent() {
     {
       id: 5,
       label: "ECONOMIC",
-      title: "Biden asks Congress for $33 billion to support Ukraine",
+      title: "Norway's economy in 2023 increases strongly",
       content:
         "Lorem Ipsum is simply dummy text of the printing and typesettin industry. Lorem Ipsum has been the industrys standard dummytext ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       date: "Dec 14,2022",
@@ -64,14 +64,14 @@ export default function MainContent() {
     <div className="container mt-4 p-3">
       <Row>
         {news.slice(0, 2).map((newz) => (
-          <Col xs={6} key={newz.id}>
+          <Col md={6} key={newz.id}>
             <Card newz={newz} />
           </Col>
         ))}
       </Row>
       <Row>
         {news.slice(2, 5).map((newz) => (
-          <Col xs={4} className="border-top border-bottom mt-3" key={newz.id}>
+          <Col md={4} className="border-top border-bottom mt-3" key={newz.id}>
             <Card newz={newz} />
           </Col>
         ))}
