@@ -48,19 +48,19 @@ export default function PopularPosts() {
   return (
     <Container className="mt-3 border-top">
       <Row>
-        <Col xs={4} className="mt-4 border-end">
+        <Col md={4} className="mt-4 border-end">
           <span>POPULAR POSTS</span>
           {popularPosts.map((newz) => (
             <Card newz={newz} />
           ))}
         </Col>
-        <Col xs={5} className="mt-4 border-end">
+        <Col md={5} className="mt-4 border-end">
           <span> RECENTLY POSTS</span>
           <RecentlyPosts />
           <span>LATEST NEWS</span>
           <TextOverCard />
         </Col>
-        <Col xs={3} className="mt-4 border-start">
+        <Col md={3} className="mt-4 border-start">
           <span>STAY CONNECTED</span>
           <div className="card rounded-0 mt-3">
             <div className="card-body">

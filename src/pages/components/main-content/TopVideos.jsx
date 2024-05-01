@@ -12,17 +12,17 @@ export default function TopVideos() {
     },
     {
       label: "BUSINESS",
-      title: "Strategy marketing of Fedex Inc",
+      title: "Art of Marketing",
       img: "pic1.png",
     },
     {
       label: "VIDEOS",
-      title: "Strategy marketing of Fedex Inc",
+      title: "Google officially acquired Yahoo today",
       img: "pic1.png",
     },
     {
       label: "MARKET",
-      title: "Strategy marketing of Fedex Inc",
+      title: "Creative with service delivery in India",
       img: "pic1.png",
     },
   ];
@@ -34,10 +34,10 @@ export default function TopVideos() {
           <img src="/arrow-right.svg" alt="" />
         </div>
         <Row>
-          <Col xs={7} className="border-end">
+          <Col md={7} className="border-end">
             <TextOverCard />
           </Col>
-          <Col xs={5}>
+          <Col md={5}>
             <span className="text-light">VIDEOS UP NEXT</span>
             {infos.map((info) => (
               <HorizontalCard info={info} key={info.label} />

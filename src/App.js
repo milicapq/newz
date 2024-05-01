@@ -16,12 +16,12 @@ function App() {
       <Header />
       <Pagination />
       <MainContent />
-      <Advertisement />
+      {/* <Advertisement /> */}
       <LatestNews />
       <PopularPosts />
       <TopVideos />
       <TopColumnist />
-      <Advertisement />
+      {/* <Advertisement /> */}
       <BottomPart />
       <Footer />
     </div>
