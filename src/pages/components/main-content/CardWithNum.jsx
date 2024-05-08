@@ -7,7 +7,7 @@ export default function CardWithNum({ trending }) {
     <div className="card mb-3 border-0 border-bottom">
       <Row className="g-0">
         <Col md={4} xs={4} className="border-end p-2 m-auto">
-          <h1>{trending.num}</h1>
+          <h1 className="text-muted">{trending.num}</h1>
         </Col>
         <Col md={8} xs={4}>
           <div className="card-body">

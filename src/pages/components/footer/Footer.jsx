@@ -1,11 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { LuSendHorizonal } from "react-icons/lu";
-import { MdOutlineKeyboardArrowUp } from "react-icons/md";
-import { CiTwitter } from "react-icons/ci";
-import { SlSocialFacebook } from "react-icons/sl";
-import { FaInstagram } from "react-icons/fa";
-import { FiYoutube } from "react-icons/fi";
+import { IoIosArrowUp } from "react-icons/io";
+import FooterInfo from "./FooterInfo";
+import FooterInput from "./FooterInput";
 
 export default function Footer() {
   const topics = [
@@ -19,37 +16,11 @@ export default function Footer() {
   ];
   const help = ["About", "Contact", "Advertise", "Career", "Policy", "FAQ"];
   return (
-    <div className="container-fluid bg-dark text-light">
+    <div className="container-fluid bg-primary text-light">
       <Container>
         <Row className="py-4">
           <Col lg={5} xs={12} className="py-4">
-            <h5 className="fw-bold mb-3">Newz - Business Magazine</h5>
-            <div className="d-flex mb-2 mt-4">
-              <img src="/house.svg" alt="" />
-              <span className="px-3">223 Orcaard St, Manhattan, NY 032</span>
-            </div>
-            <div className="d-flex mb-2">
-              <img src="telephone.svg" alt="" />
-              <span className="px-3">+031 5689 89 98</span>
-            </div>
-            <div className="d-flex">
-              <img src="envelope-icon-light.svg" alt="" />
-              <span className="px-3">technology@newz.com</span>
-            </div>
-            <div className="mt-4 d-flex gap-2">
-              <div className="rounded-circle circle border border-light d-flex align-items-center justify-content-center">
-                <CiTwitter />
-              </div>
-              <div className="rounded-circle circle bg-transparent border border-light d-flex align-items-center justify-content-center">
-                <SlSocialFacebook />
-              </div>
-              <div className="rounded-circle circle bg-transparent border border-light d-flex align-items-center justify-content-center">
-                <FaInstagram />
-              </div>
-              <div className="rounded-circle circle bg-transparent border border-light d-flex align-items-center justify-content-center">
-                <FiYoutube />
-              </div>
-            </div>
+            <FooterInfo />
           </Col>
           <Col xs={4} md={2} className="py-4" key={topics}>
             <h5 className="mb-2 fw-bold">Topics</h5>
@@ -68,19 +39,7 @@ export default function Footer() {
             <p className="mt-4">
               Register now to get latest updates on promotions & coupons.
             </p>
-            <div className="bg-primary rounded-pill p-1 d-flex align-items-center justify-content-between">
-              <img src="envelope-icon-light.svg" className="p-2 ms-2" alt="" />
-              <input
-                type="text"
-                className="rounded-pill text-light bg-primary border-0"
-                name=""
-                placeholder="Enter your email"
-                id=""
-              />
-              <div className="bg-light rounded-circle p-2 send-icon">
-                <LuSendHorizonal className="text-dark m-2" />
-              </div>
-            </div>
+            <FooterInput />
             <p className="mt-3 fst-italic">
               By subscribing, you accepted our Policy
             </p>
@@ -105,7 +64,7 @@ export default function Footer() {
                   aria-expanded="false"
                 >
                   English
-                  <MdOutlineKeyboardArrowUp />
+                  <IoIosArrowUp className="ms-1" />
                 </button>
               </div>
             </div>

@@ -1,44 +1,16 @@
 import React from "react";
 import { Col, Container, Row, Card } from "react-bootstrap";
+import { columnists } from "../../../data/ColumnistsData";
+import { SlArrowRight } from "react-icons/sl";
 
 export default function TopColumnist() {
-  const columnists = [
-    {
-      id: 1,
-      img: "/top-columnist-img/Conor.png",
-      name: "Conor Bradley",
-      specializeIn: "BUSINESS, NEWS",
-      content:
-        "My content focus into business politic that allows anyone with a cellphone to scan cultural landmarks and monuments in danger",
-    },
-    {
-      id: 2,
-      img: "Untitled1.png",
-      name: "Luis Diaz",
-      specializeIn: "POLITICS, MARKET",
-      content:
-        "My content focus into business politic that allows anyone with a cellphone to scan",
-    },
-    {
-      id: 3,
-      img: "Untitled1.png",
-      name: "Alberto Moreno",
-      specializeIn: "VIDEOS, TECHNOLOGY",
-      content:
-        "My content focus into business politic that allows anyone with a cellphone to scan cultural landmarks and monum",
-    },
-    {
-      id: 4,
-      img: "Untitled1.png",
-      name: "Darwin Nunez",
-      specializeIn: "ECOMONICS",
-      content: "My content focus into business politic that allows anyone",
-    },
-  ];
   return (
     <Container className="mt-3 border-bottom mb-3">
       <Row className="mb-3">
-        <p>Top columnist</p>
+        <div className="py-2">
+          <span>TOP COLUMNIST</span>
+          <SlArrowRight className="ms-3 mb-1" />
+        </div>
         {columnists.map((columnist) => (
           <Col md={3} xs={6} key={columnist.id}>
             <Card className="border-0 border-end">

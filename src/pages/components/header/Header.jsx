@@ -5,6 +5,10 @@ import Weather from "./Weather";
 import Navbar from "./Navbar";
 import HeaderIcons from "./HeaderIcons";
 import { Col, Row } from "react-bootstrap";
+import { LiaEnvelope } from "react-icons/lia";
+import { GoPerson } from "react-icons/go";
+import { HiOutlineShoppingBag } from "react-icons/hi2";
+import { VscSearch } from "react-icons/vsc";
 
 export default function Header() {
   return (
@@ -31,17 +35,20 @@ export default function Header() {
             </Col>
           </Row>
           <Row>
-            <Col xs={6}>
+            <Col xs={8}>
               <div className="border-bottom d-flex align-items-center mt-4">
-                <img className="px-2" src="/envelope-icon.svg" alt="" />
-                <span className="">SUBSCRIBE</span>
+                <LiaEnvelope className="" />
+                <span className="px-2">SUBSCRIBE</span>
               </div>
             </Col>
-            <div className="py-3 col-6">
-              <img className="p-2 mt-2" src="/profile-icon.svg" alt="" />
-              <img className="border-end p-2" src="/bag-icon.svg" alt="" />
-              <img className="px-3" src="/search-icon.svg" alt="" />
-            </div>
+            <Col
+              xs={4}
+              className="d-flex justify-content-between align-items-center"
+            >
+              <GoPerson />
+              <HiOutlineShoppingBag className="" />
+              <VscSearch className="ms-2 border-start" />
+            </Col>
           </Row>
         </div>
         <div className="d-flex justify-content-between w-100 border-bottom">
