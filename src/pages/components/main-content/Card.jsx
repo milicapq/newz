@@ -1,6 +1,7 @@
 import React from "react";
 import Sticker from "./Sticker";
 import { Row, Col } from "react-bootstrap";
+import DateUserComment from "./DateUserComment";
 
 export default function Card({ newz }) {
   return (
@@ -13,7 +14,8 @@ export default function Card({ newz }) {
         <Sticker label={newz?.label} />
         <h3 className="fw-bold">{newz.title}</h3>
         <p>{newz.content}</p>
-        <Row>
+        <DateUserComment newz={newz} />
+        {/* <Row>
           <Col md={newz?.id > 2 ? "5" : "3"}>
             <img src="/calendar-icon.svg"></img>
             <span className="ms-2">{newz.date}</span>
@@ -28,8 +30,8 @@ export default function Card({ newz }) {
             <img src="/comment.svg" alt="" />
             <span className="px-2">{newz.comments}</span>
           </Col>
-          <img src={newz.img} className="mt-2" alt="" />
-        </Row>
+        <img src={newz.img} className="mt-2" alt="" />
+        </Row> */}
       </div>
     </div>
   );

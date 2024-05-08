@@ -1,4 +1,6 @@
 import React from "react";
+import { SlArrowRight } from "react-icons/sl";
+import { SlArrowLeft } from "react-icons/sl";
 
 export default function PageNavigation() {
   return (
@@ -6,12 +8,16 @@ export default function PageNavigation() {
       <ul className="pagination m-auto p-1">
         <li className="page-item px-1">
           <a className="page-link" href="#" aria-label="Previous">
-            <span aria-hidden="true">&lang;</span>
+            <span aria-hidden="true">
+              <SlArrowLeft className="text-muted" />
+            </span>
           </a>
         </li>
         <li className="page-item">
           <a className="page-link" href="#" aria-label="Next">
-            <span aria-hidden="true">&rang;</span>
+            <span aria-hidden="true">
+              <SlArrowRight className="text-muted" />
+            </span>
           </a>
         </li>
       </ul>

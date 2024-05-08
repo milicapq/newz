@@ -4,34 +4,9 @@ import Card from "./Card";
 import RecentlyPosts from "./RecentlyPosts";
 import TextOverCard from "./TextOverCard";
 import SmallAdvertisement from "./SmallAdvertisement";
+import { popularPosts } from "../../../data/PopularPostsData";
 
 export default function PopularPosts() {
-  const popularPosts = [
-    {
-      id: "3",
-      label: "MARKET",
-      title: "US Stock Market last week, Nike hit near 40%",
-      date: "Dec 14,2022",
-      comment: 4,
-      img: "/pic1.png",
-    },
-    {
-      id: "4",
-      label: "MARKET",
-      title: "Joe Biden did not participate in the war",
-      date: "Dec 14,2022",
-      comment: 4,
-      img: "/pic1.png",
-    },
-    {
-      id: "5",
-      label: "MARKET",
-      title: "US Stock Market last week, Nike hit near 40%",
-      date: "Dec 14,2022",
-      comment: 4,
-      img: "/pic1.png",
-    },
-  ];
   const buttons = [
     "Covid-19",
     "Bitcoin",
