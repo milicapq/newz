@@ -28,7 +28,7 @@ export default function BottomSection() {
     <Container>
       <Row>
         {bottomInfo.map((column) => (
-          <Col md={4} className="border-end">
+          <Col md={12} lg={4} className="border-end">
             <Column
               cardInfo={column.cardInfo}
               horizontalCardInfo={column.horizontalCardInfo}

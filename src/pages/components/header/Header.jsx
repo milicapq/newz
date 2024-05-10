@@ -9,6 +9,7 @@ import { LiaEnvelope } from "react-icons/lia";
 import { GoPerson } from "react-icons/go";
 import { HiOutlineShoppingBag } from "react-icons/hi2";
 import { VscSearch } from "react-icons/vsc";
+import TabletMobileNav from "./TabletMobileNav";
 
 export default function Header() {
   return (
@@ -21,7 +22,8 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <div className="container p-3">
+      <TabletMobileNav className="d-lg-none" />
+      <div className="container p-3 d-md-none d-lg-block">
         <div className="d-flex justify-content-between">
           <Row>
             <Col xs={4}>

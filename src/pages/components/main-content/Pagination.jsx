@@ -4,7 +4,7 @@ import PageNavigation from "./PageNavigation";
 
 export default function Pagination() {
   return (
-    <div className="container mt-2">
+    <div className="container mt-md-5 mt-2">
       <div className="d-flex align-items-center justify-content-between px-0 bg-secondary">
         <Sticker label={"Breaking News"}>
           <img className="p-2" src="/thunder.svg" alt="" />
@@ -15,7 +15,9 @@ export default function Pagination() {
               The biggest takeaways from the first Jan 6, 6 hearing
             </span>
             <span className="mx-4"></span>
-            <span>The biggest takeaways from the first Jan 6, 6 hearing</span>
+            <span className="d-md-none d-lg-block">
+              The biggest takeaways from the first Jan 6, 6 hearing
+            </span>
           </div>
           <PageNavigation />
         </div>

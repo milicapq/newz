@@ -4,7 +4,7 @@ export default function Navbar() {
   const navbar = ["News", "Tech", "Business", "Politic", "Market"];
   const dropdown = ["Demo", "Features", "Shop"];
   return (
-    <ul className="nav py-1 mt-2">
+    <ul className="nav py-1 mt-lg-2 d-flex flex-md-column flex-lg-row">
       {dropdown.map((drop) => (
         <div className="dropdown">
           <button
@@ -38,7 +38,7 @@ export default function Navbar() {
 
       {navbar.map((nav) => (
         <li className="nav-item">
-          <a className="nav-link" href="#">
+          <a className="nav-link px-md-0 px-lg-2" href="#">
             {nav}
           </a>
         </li>
