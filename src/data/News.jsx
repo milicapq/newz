@@ -23,6 +23,7 @@ export const news = [
   },
   {
     id: 3,
+    live: true,
     label: "POLITICS",
     title: "The 6th session of the US Congress today",
     content:

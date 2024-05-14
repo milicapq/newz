@@ -15,7 +15,7 @@ export default function Pagination() {
               The biggest takeaways from the first Jan 6, 6 hearing
             </span>
             <span className="mx-4"></span>
-            <span className="d-md-none d-lg-block">
+            <span className="d-none d-lg-block">
               The biggest takeaways from the first Jan 6, 6 hearing
             </span>
           </div>

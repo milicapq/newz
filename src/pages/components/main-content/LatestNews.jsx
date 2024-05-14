@@ -5,6 +5,7 @@ import TextOverCard from "./TextOverCard";
 import CardWithNum from "./CardWithNum";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { SlArrowRight } from "react-icons/sl";
+import TreningCardOverlay from "./TrendingCardOverlay";
 
 export default function LatestNews({ infos = [], trendingNews = [] }) {
   return (
@@ -29,6 +30,7 @@ export default function LatestNews({ infos = [], trendingNews = [] }) {
 
         <Col lg={3} md={6}>
           <p className="fw-bold">TRENDING POSTS</p>
+          <TreningCardOverlay />
           {trendingNews.map((trending) => (
             <CardWithNum trending={trending} />
           ))}

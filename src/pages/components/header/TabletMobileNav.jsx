@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import Calender from "./Calender";
 import Weather from "./Weather";
+import SearchHeader from "./SearchHeader";
 
 export default function TabletMobileNav() {
   return (
@@ -11,8 +12,10 @@ export default function TabletMobileNav() {
           <a class="navbar-brand" href="#">
             <img className="p-1" src="/Untitled.png" alt="" />
           </a>
+          {/* <div className="d-none d-md-block"> */}
           <Calender />
           <Weather />
+          {/* </div> */}
           <button
             class="navbar-toggler"
             type="button"
@@ -29,7 +32,7 @@ export default function TabletMobileNav() {
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
           >
-            <div class="offcanvas-header">
+            <div class="offcanvas-header border border-muted">
               <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
                 <img className="p-1" src="/Untitled.png" alt="" />
               </h5>
@@ -39,6 +42,9 @@ export default function TabletMobileNav() {
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
               ></button>
+            </div>
+            <div>
+              <SearchHeader />
             </div>
             <div class="offcanvas-body">
               <Navbar />

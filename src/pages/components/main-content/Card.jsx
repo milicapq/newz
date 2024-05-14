@@ -11,28 +11,22 @@ export default function Card({ newz }) {
       } `}
     >
       <div className="card-body">
-        <Sticker label={newz?.label} />
-        <h3 className="fw-bold">{newz.title}</h3>
+        <div className="d-flex gap-2">
+          {newz.live ? (
+            <div className="bg-danger text-light px-2 live-circle d-flex align-items-center">
+              <span></span>
+              <p className="fw-bold m-0 ms-2">LIVE</p>
+            </div>
+          ) : (
+            ""
+          )}
+          <Sticker label={newz?.label} />
+        </div>
+        <h3 className="fw-bold mt-3">{newz.title}</h3>
         <p>{newz.content}</p>
         <DateUserComment newz={newz} />
-        {/* <Row>
-          <Col md={newz?.id > 2 ? "5" : "3"}>
-            <img src="/calendar-icon.svg"></img>
-            <span className="ms-2">{newz.date}</span>
-          </Col>
-          {newz.id < 3 && (
-            <Col md={3}>
-              <img src="/profile-icon.svg" alt="" />
-              <span>{newz.writtenBy}</span>
-            </Col>
-          )}
-          <Col md={3}>
-            <img src="/comment.svg" alt="" />
-            <span className="px-2">{newz.comments}</span>
-          </Col>
-        <img src={newz.img} className="mt-2" alt="" />
-        </Row> */}
       </div>
+      <img src={newz.img} className="mt-2 px-2" alt="" />
     </div>
   );
 }

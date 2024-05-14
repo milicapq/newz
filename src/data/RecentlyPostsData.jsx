@@ -23,4 +23,20 @@ export const recentlyPosts = [
     comment: 4,
     img: "/pic2.png",
   },
+  {
+    id: "6",
+    label: "MARKET",
+    title: "US Stock Market last week, Nike hit near 40%",
+    date: "Dec 1,2022",
+    comment: 4,
+    img: "/pic2.png",
+  },
+  {
+    id: "7",
+    label: "MARKET",
+    title: "US Stock Market last week, Nike hit near 40%",
+    date: "Dec 1,2022",
+    comment: 4,
+    img: "/pic2.png",
+  },
 ];

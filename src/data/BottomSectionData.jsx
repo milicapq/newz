@@ -3,7 +3,7 @@ export const bottomInfo = [
     cardInfo: [
       {
         category: "BUSINESS",
-        id: 1,
+        id: 33,
         heading: "BUSINESS",
         label: "BUSINESS",
         title: "Strategy in business: The mindset of chess",
