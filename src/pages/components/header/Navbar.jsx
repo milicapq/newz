@@ -4,11 +4,11 @@ export default function Navbar() {
   const navbar = ["News", "Tech", "Business", "Politic", "Market"];
   const dropdown = ["Demo", "Features", "Shop"];
   return (
-    <ul className="nav py-1 mt-lg-2 d-flex flex-md-column flex-lg-row">
+    <ul className="nav py-1 mt-lg-2 d-flex flex-column flex-lg-row gap-3">
       {dropdown.map((drop) => (
         <div className="dropdown">
           <button
-            className="btn dropdown-toggle px-0"
+            className="btn dropdown-toggle px-0 mt-2"
             type="button"
             id="dropdownMenu2"
             data-bs-toggle="dropdown"
@@ -38,7 +38,14 @@ export default function Navbar() {
 
       {navbar.map((nav) => (
         <li className="nav-item">
-          <a className="nav-link px-md-0 px-lg-2" href="#">
+          {nav === "News" ? (
+            <div className="bg-primary rounded position-absolute ms-5 gap-3">
+              <span className="text-light">HOT</span>
+            </div>
+          ) : (
+            ""
+          )}
+          <a className="nav-link px-0 px-lg-2 m-2" href="#">
             {nav}
           </a>
         </li>

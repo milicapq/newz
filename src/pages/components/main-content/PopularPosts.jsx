@@ -1,16 +1,17 @@
 import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import Card from "./Card";
-import RecentlyPosts from "./RecentlyPosts";
 import TextOverCard from "./TextOverCard";
 import SmallAdvertisement from "./SmallAdvertisement";
 import { popularPosts } from "../../../data/PopularPostsData";
 import WebStories from "./WebStories";
 import Tags from "./Tags";
+import HorizontalCard from "./HorizontalCard";
+import { recentlyPosts } from "../../../data/RecentlyPostsData";
 
 export default function PopularPosts() {
   return (
-    <Container className="mt-3 border-top">
+    <Container className="mt-3 border-top px-0">
       <Row>
         <Col lg={4} md={6} className="mt-4 border-end">
           <span>POPULAR POSTS</span>
@@ -20,9 +21,13 @@ export default function PopularPosts() {
         </Col>
         <Col lg={5} md={6} className="mt-4 border-end">
           <span> RECENTLY POSTS</span>
-          <RecentlyPosts />
-          <span>LATEST NEWS</span>
+          {recentlyPosts.slice(0, 3).map((post) => (
+            <HorizontalCard info={post} key={post.comment} />
+          ))}
           <TextOverCard />
+          {recentlyPosts.slice(3, 5).map((posts) => (
+            <HorizontalCard info={posts} />
+          ))}
         </Col>
         <Col lg={3} md={12} className="mt-4 border-start">
           <Row>

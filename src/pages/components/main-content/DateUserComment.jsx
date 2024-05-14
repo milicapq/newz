@@ -13,16 +13,20 @@ export default function DateUserComment({ newz }) {
       </Col>
       {newz?.id < 3 && (
         <Col xs={3} md={4} className="my-0 py-0">
-          <GoPerson className="mx-2" />
-          <span>{newz?.writtenBy}</span>
+          <div className="d-flex">
+            <GoPerson className="mt-1" />
+            <span className="ms-2">By</span>
+            <span className="fw-bold">{newz?.writtenBy}</span>
+          </div>
         </Col>
       )}
       <Col xs={3} md={4}>
-        <MdOutlineInsertComment />
-        <span className="px-2">{newz?.comments}</span>
-        <span> Comments</span>
+        <div className="d-flex">
+          <MdOutlineInsertComment />
+          <span className="px-2">{newz?.comments}</span>
+          <span> Comments</span>
+        </div>
       </Col>
-      <img src={newz?.img} className="mt-2" alt="" />
     </Row>
   );
 }

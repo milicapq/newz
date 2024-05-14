@@ -5,16 +5,13 @@ import Weather from "./Weather";
 import Navbar from "./Navbar";
 import HeaderIcons from "./HeaderIcons";
 import { Col, Row } from "react-bootstrap";
-import { LiaEnvelope } from "react-icons/lia";
-import { GoPerson } from "react-icons/go";
-import { HiOutlineShoppingBag } from "react-icons/hi2";
-import { VscSearch } from "react-icons/vsc";
 import TabletMobileNav from "./TabletMobileNav";
+import SearchHeader from "./SearchHeader";
 
 export default function Header() {
   return (
     <div className="header">
-      <div className="container-fluid bg-primary d-flex justify-content-center align-items-center">
+      <div className="container-fluid bg-primary d-flex justify-content-center align-items-center d-xs-none">
         <div className="container">
           <div className="d-flex justify-content-between align-items-center">
             <h6 className="mt-1">Market Data Today</h6>
@@ -23,7 +20,7 @@ export default function Header() {
         </div>
       </div>
       <TabletMobileNav className="d-lg-none" />
-      <div className="container p-3 d-md-none d-lg-block">
+      <div className="container p-3 d-md-none d-none d-lg-block">
         <div className="d-flex justify-content-between">
           <Row>
             <Col xs={4}>
@@ -36,22 +33,7 @@ export default function Header() {
               <Weather />
             </Col>
           </Row>
-          <Row>
-            <Col xs={8}>
-              <div className="border-bottom d-flex align-items-center mt-4">
-                <LiaEnvelope className="" />
-                <span className="px-2">SUBSCRIBE</span>
-              </div>
-            </Col>
-            <Col
-              xs={4}
-              className="d-flex justify-content-between align-items-center"
-            >
-              <GoPerson />
-              <HiOutlineShoppingBag className="" />
-              <VscSearch className="ms-2 border-start" />
-            </Col>
-          </Row>
+          <SearchHeader />
         </div>
         <div className="d-flex justify-content-between w-100 border-bottom">
           <Navbar />

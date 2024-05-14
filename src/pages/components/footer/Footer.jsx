@@ -19,7 +19,7 @@ export default function Footer() {
     <div className="container-fluid bg-primary text-light">
       <Container>
         <Row className="py-4">
-          <Col lg={5} xs={12} className="py-4">
+          <Col lg={5} xs={6} className="py-4">
             <FooterInfo />
           </Col>
           <Col xs={4} md={2} className="py-4" key={topics}>
@@ -28,13 +28,13 @@ export default function Footer() {
               <p className="mt-4">{topic}</p>
             ))}
           </Col>
-          <Col xs={4} md={2} className="py-4" key={help}>
+          <Col xs={4} md={2} lg={2} className="py-4" key={help}>
             <h5 className="mb-2 fw-bold">Help</h5>
             {help.map((item) => (
               <p className="mt-4">{item}</p>
             ))}
           </Col>
-          <Col xs={4} md={3} className="py-4">
+          <Col xs={4} lg={3} md={12} className="py-4">
             <h5 className="fw-bold">Newsletter</h5>
             <p className="mt-4">
               Register now to get latest updates on promotions & coupons.
@@ -46,13 +46,13 @@ export default function Footer() {
           </Col>
         </Row>
         <Row>
-          <Col xs={2} md={3}>
+          <Col xs={2} md={12} lg={3}>
             <img className="me-4" src="/logo-dark.png" alt="" />
           </Col>
-          <Col md={7} xs={5} className="mt-3">
+          <Col lg={7} xs={5} md={8} className="mt-3">
             <span>© 2022 Copyrights by Newz. All Rights Reserved.</span>
           </Col>
-          <Col xs={4} md={2} className="d-flex justify-content-end">
+          <Col xs={4} md={3} lg={2} className="d-flex justify-content-end">
             <div className="d-flex align-items-center">
               <img className="flag rounded-circle" src="/flag-usa.png" alt="" />
               <div class="btn-group">

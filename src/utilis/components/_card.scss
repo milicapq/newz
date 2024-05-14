@@ -3,3 +3,12 @@
 h3 {
   font-family: Gloock sans-serif;
 }
+.live-circle {
+  span {
+    content: "";
+    background-color: #fff;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+  }
+}
