@@ -45,7 +45,7 @@ export default function Navbar() {
           ) : (
             ""
           )}
-          <a className="nav-link px-0 px-lg-2 m-2" href="#">
+          <a className="nav-link px-0 px-lg-2 m-md-2 mt-2" href="#">
             {nav}
           </a>
         </li>

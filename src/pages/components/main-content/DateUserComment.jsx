@@ -7,7 +7,7 @@ import { MdOutlineInsertComment } from "react-icons/md";
 export default function DateUserComment({ newz }) {
   return (
     <Row className="text-muted">
-      <Col xs={newz?.id > 2 ? "5" : "3"}>
+      <Col xs={newz?.id > 2 ? "5" : "4"}>
         <IoCalendarOutline />
         <span className="ms-2">{newz?.date}</span>
       </Col>
