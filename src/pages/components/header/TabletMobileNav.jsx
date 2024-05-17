@@ -6,39 +6,37 @@ import SearchHeader from "./SearchHeader";
 
 export default function TabletMobileNav() {
   return (
-    <nav class="navbar bg-body-tertiary fixed-top d-lg-none">
-      <div class="container-fluid">
-        <div class="container d-flex justify-content-between align-items-center">
-          <a class="navbar-brand" href="#">
+    <nav className="navbar bg-body-tertiary fixed-top d-lg-none">
+      <div className="container-fluid">
+        <div className="container d-flex justify-content-between align-items-center">
+          <a className="navbar-brand" href="#">
             <img className="p-1" src="/Untitled.png" alt="" />
           </a>
-          {/* <div className="d-none d-md-block"> */}
           <Calender />
           <Weather />
-          {/* </div> */}
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasNavbar"
             aria-controls="offcanvasNavbar"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
           <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
+            className="offcanvas offcanvas-end"
+            tabIndex="-1"
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
           >
-            <div class="offcanvas-header border border-muted">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+            <div className="offcanvas-header border border-muted">
+              <h5 className="offcanvas-title" id="offcanvasNavbarLabel">
                 <img className="p-1" src="/Untitled.png" alt="" />
               </h5>
               <button
                 type="button"
-                class="btn-close"
+                className="btn-close"
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
               ></button>
@@ -46,7 +44,7 @@ export default function TabletMobileNav() {
             <div>
               <SearchHeader />
             </div>
-            <div class="offcanvas-body">
+            <div className="offcanvas-body">
               <Navbar />
             </div>
           </div>
