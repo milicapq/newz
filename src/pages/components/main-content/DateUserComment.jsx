@@ -7,8 +7,8 @@ import { MdOutlineInsertComment } from "react-icons/md";
 export default function DateUserComment({ newz }) {
   return (
     <Row className="text-muted">
-      <Col xs={newz?.id > 2 ? "5" : "4"}>
-        <IoCalendarOutline />
+      <Col xs={newz?.id > 2 ? "5" : "3"}>
+        <IoCalendarOutline className="mb-1" />
         <span className="ms-2">{newz?.date}</span>
       </Col>
       {newz?.id < 3 && (
@@ -20,9 +20,9 @@ export default function DateUserComment({ newz }) {
           </div>
         </Col>
       )}
-      <Col xs={3} md={4}>
+      <Col xs={3} md={5}>
         <div className="d-flex">
-          <MdOutlineInsertComment />
+          <MdOutlineInsertComment className="mt-1" />
           <span className="px-2">{newz?.comments}</span>
           <span> Comments</span>
         </div>

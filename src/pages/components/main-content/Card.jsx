@@ -1,12 +1,11 @@
 import React from "react";
 import Sticker from "./Sticker";
-import { Row, Col } from "react-bootstrap";
 import DateUserComment from "./DateUserComment";
 
 export default function Card({ newz }) {
   return (
     <div
-      className={`card mb-3 border-0 ${
+      className={`card mb-4 mt-4 border-0 ${
         (newz?.id == 2 && "border-end-0") || (newz.id < 5 && "border-end")
       } `}
     >
@@ -26,7 +25,7 @@ export default function Card({ newz }) {
         <p>{newz.content}</p>
         <DateUserComment newz={newz} />
       </div>
-      <img src={newz.img} className="mt-2 px-2" alt="" />
+      <img src={newz.img} className="mt-2 px-3" alt="" />
     </div>
   );
 }

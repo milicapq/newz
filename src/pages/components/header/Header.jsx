@@ -13,10 +13,14 @@ export default function Header() {
     <div className="header">
       <div className="container-fluid bg-primary d-flex justify-content-center align-items-center d-xs-none">
         <div className="container">
-          <div className="d-flex justify-content-between align-items-center">
-            <h6 className="mt-1">Market Data Today</h6>
-            <Ticker />
-          </div>
+          <Row>
+            <Col lg={2} className="d-flex align-items-center">
+              <h6 className="mt-1">Market Data Today</h6>
+            </Col>
+            <Col lg={10}>
+              <Ticker />
+            </Col>
+          </Row>
         </div>
       </div>
       <TabletMobileNav className="d-lg-none" />

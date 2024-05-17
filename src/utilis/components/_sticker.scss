@@ -23,26 +23,30 @@
 }
 
 .sticker-small {
+  --_current-color: #3d5c6e;
   min-width: 10%;
-  background-color: #3d5c6e;
+  background-color: var(--_current-color);
   display: flex;
   position: relative;
   z-index: 1;
 
-  :after {
+  ::after {
     content: "";
     border-left: 10px solid transparent;
     border-right: 20px solid transparent;
-    border-top: 27px solid#3d5c6e;
+    border-top: 27px solid var(--_current-color);
     position: absolute;
     right: -20px;
     z-index: -1;
     top: 0;
   }
+  &.bg-light {
+    --_current-color: #ffffff;
+  }
   .fw-bold {
     font-size: 13px;
   }
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 770px) {
     :after {
       content: "";
       border-left: 10px solid transparent;

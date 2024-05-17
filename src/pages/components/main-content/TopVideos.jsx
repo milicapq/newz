@@ -15,17 +15,17 @@ export default function TopVideos() {
           <SlArrowRight className="ms-3 mb-1 text-light" />
         </div>
         <Row>
-          <Col md={7} className="border-end">
+          <Col md={8} className="border-end">
             <TextOverCard />
           </Col>
-          <Col md={5}>
-            <span className="text-light">VIDEOS UP NEXT</span>
+          <Col md={4} className="px-4">
+            <span className="text-light ms-2">VIDEOS UP NEXT</span>
             {nextVideos.map((video) => (
               <HorizontalCard info={video} key={video.label} />
             ))}
             <div className="d-flex align-items-center text-light">
-              <span>See all posts</span>
-              <MdKeyboardArrowRight />
+              <span className="ms-1 mt-5">See all posts</span>
+              <MdKeyboardArrowRight className="mt-5" />
             </div>
           </Col>
         </Row>
