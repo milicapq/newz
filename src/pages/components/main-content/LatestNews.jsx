@@ -9,8 +9,8 @@ import TreningCardOverlay from "./TrendingCardOverlay";
 
 export default function LatestNews({ infos = [], trendingNews = [] }) {
   return (
-    <Container className="border-top mt-4">
-      <Row className="mt-4">
+    <Container className="border-top mt-3">
+      <Row className="mt-5">
         <Col lg={5}>
           <div className="d-flex">
             <p className="fw-bold">LATEST NEWS</p>
@@ -34,7 +34,7 @@ export default function LatestNews({ infos = [], trendingNews = [] }) {
           {trendingNews.map((trending) => (
             <CardWithNum trending={trending} />
           ))}
-          <div className="d-flex align-items-center text-muted">
+          <div className="d-flex align-items-center text-muted mt-4">
             <span>See all posts</span>
             <MdKeyboardArrowRight />
           </div>

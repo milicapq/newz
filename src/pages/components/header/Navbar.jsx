@@ -1,4 +1,5 @@
 import React from "react";
+import { MdKeyboardArrowDown } from "react-icons/md";
 
 export default function Navbar() {
   const navbar = ["News", "Tech", "Business", "Politic", "Market"];
@@ -8,13 +9,14 @@ export default function Navbar() {
       {dropdown.map((drop) => (
         <div className="dropdown">
           <button
-            className="btn dropdown-toggle px-0 mt-2"
+            className="btn px-0 mt-2"
             type="button"
             id="dropdownMenu2"
             data-bs-toggle="dropdown"
             aria-expanded="false"
           >
             {drop}
+            <MdKeyboardArrowDown className="ms-2" />
           </button>
           <ul className="dropdown-menu" aria-labelledby="dropdownMenu2">
             <li>
@@ -40,7 +42,7 @@ export default function Navbar() {
         <li className="nav-item">
           {nav === "News" ? (
             <div className="bg-primary rounded position-absolute ms-5 gap-3">
-              <span className="text-light">HOT</span>
+              <span className="text-light p-1">HOT</span>
             </div>
           ) : (
             ""

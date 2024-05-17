@@ -11,15 +11,15 @@ import { recentlyPosts } from "../../../data/RecentlyPostsData";
 
 export default function PopularPosts() {
   return (
-    <Container className="mt-3 border-top px-0">
+    <Container className="mt-4 border-top px-0">
       <Row>
         <Col lg={4} md={6} className="mt-4 border-end">
-          <span>POPULAR POSTS</span>
+          <span className="ms-3">POPULAR POSTS</span>
           {popularPosts.map((newz) => (
             <Card newz={newz} />
           ))}
         </Col>
-        <Col lg={5} md={6} className="mt-4 border-end">
+        <Col lg={5} md={6} className="mt-4 border-end px-4">
           <span> RECENTLY POSTS</span>
           {recentlyPosts.slice(0, 3).map((post) => (
             <HorizontalCard info={post} key={post.comment} />
@@ -29,7 +29,7 @@ export default function PopularPosts() {
             <HorizontalCard info={posts} />
           ))}
         </Col>
-        <Col lg={3} md={12} className="mt-4 border-start">
+        <Col lg={3} md={12} className="mt-4 border-start px-4">
           <Row>
             <Col md={6} lg={12}>
               <span>STAY CONNECTED</span>

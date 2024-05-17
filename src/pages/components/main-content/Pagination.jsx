@@ -4,8 +4,8 @@ import PageNavigation from "./PageNavigation";
 
 export default function Pagination() {
   return (
-    <div className="container mt-md-5 mt-4">
-      <div className="d-block d-md-flex align-items-center justify-content-between px-0 bg-secondary">
+    <div className="container mt-4 px-3">
+      <div className="d-block d-md-flex align-items-center justify-content-between bg-secondary">
         <Sticker label={"Breaking News"}>
           <img className="p-2" src="/thunder.svg" alt="" />
         </Sticker>
