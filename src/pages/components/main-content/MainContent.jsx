@@ -1,11 +1,11 @@
 import React from "react";
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Container } from "react-bootstrap";
 import Card from "./Card";
 import { news } from "../../../data/News";
 
 export default function MainContent() {
   return (
-    <div className="container mt-4 px-0">
+    <Container className="mt-4 px-0">
       <Row>
         {news.slice(0, 2).map((newz) => (
           <Col md={6} key={newz.id}>
@@ -19,12 +19,12 @@ export default function MainContent() {
             md={6}
             lg={4}
             className="border-top border-bottom mt-3"
-            key={newz.id}
+            key={newz.title}
           >
             <Card newz={newz} />
           </Col>
         ))}
       </Row>
-    </div>
+    </Container>
   );
 }

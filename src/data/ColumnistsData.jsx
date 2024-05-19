@@ -9,7 +9,7 @@ export const columnists = [
   },
   {
     id: 2,
-    img: "Untitled1.png",
+    img: "/top-columnist-img/luis diaz.png",
     name: "Luis Diaz",
     specializeIn: "POLITICS, MARKET",
     content:
@@ -17,7 +17,7 @@ export const columnists = [
   },
   {
     id: 3,
-    img: "Untitled1.png",
+    img: "/top-columnist-img/alberto moreno1.png",
     name: "Alberto Moreno",
     specializeIn: "VIDEOS, TECHNOLOGY",
     content:
@@ -25,7 +25,7 @@ export const columnists = [
   },
   {
     id: 4,
-    img: "Untitled1.png",
+    img: "/top-columnist-img/darwin nunez.png",
     name: "Darwin Nunez",
     specializeIn: "ECOMONICS",
     content: "My content focus into business politic that allows anyone",

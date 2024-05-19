@@ -55,7 +55,7 @@ export default function Footer() {
           <Col xs={6} md={3} lg={2} className="d-flex justify-content-end">
             <div className="d-flex align-items-center">
               <img className="flag rounded-circle" src="/flag-usa.png" alt="" />
-              <div class="btn-group">
+              <div className="btn-group">
                 <button
                   type="button"
                   className="btn text-light"

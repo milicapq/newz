@@ -21,7 +21,7 @@ export default function SearchHeader() {
           <i className="bi bi-bag"></i>
         </div>
         <div>
-          <i class="bi bi-search"></i>
+          <i className="bi bi-search"></i>
         </div>
       </Col>
     </Row>

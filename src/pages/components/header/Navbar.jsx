@@ -16,7 +16,7 @@ export default function Navbar() {
             aria-expanded="false"
           >
             {drop}
-            <MdKeyboardArrowDown className="ms-2" />
+            <MdKeyboardArrowDown className="ms-2" key={drop} />
           </button>
           <ul className="dropdown-menu" aria-labelledby="dropdownMenu2">
             <li>

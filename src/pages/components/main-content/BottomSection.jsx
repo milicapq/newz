@@ -14,7 +14,7 @@ function Column({ cardInfo, horizontalCardInfo }) {
             <h6 className="mb-4 text-dark">{info?.category}</h6>
             <SlArrowRight className="ms-3 mb-1" />
           </div>
-          <Card newz={info} />
+          <Card newz={info} key={info.title} />
         </>
       ))}
       {horizontalCardInfo.map((info) => (

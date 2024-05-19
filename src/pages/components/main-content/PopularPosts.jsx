@@ -16,7 +16,7 @@ export default function PopularPosts() {
         <Col lg={4} md={6} className="mt-4 border-end">
           <span className="ms-3">POPULAR POSTS</span>
           {popularPosts.map((newz) => (
-            <Card newz={newz} />
+            <Card newz={newz} key={newz.content} />
           ))}
         </Col>
         <Col lg={5} md={6} className="mt-4 border-end px-4">
@@ -26,7 +26,7 @@ export default function PopularPosts() {
           ))}
           <TextOverCard />
           {recentlyPosts.slice(3, 5).map((posts) => (
-            <HorizontalCard info={posts} />
+            <HorizontalCard info={posts} key={posts.comment} />
           ))}
         </Col>
         <Col lg={3} md={12} className="mt-4 border-start px-4">
