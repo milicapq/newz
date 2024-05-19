@@ -5,7 +5,7 @@ export const popularPosts = [
     title: "US Stock Market last week, Nike hit near 40%",
     date: "Dec 14,2022",
     comments: 4,
-    img: "/pic1.png",
+    img: "/popular-posts-img/stock-market.png",
   },
   {
     id: "7",
@@ -13,7 +13,7 @@ export const popularPosts = [
     title: "Joe Biden did not participate in the war",
     date: "Dec 14,2022",
     comments: 4,
-    img: "/pic1.png",
+    img: "/popular-posts-img/joe biden.png",
   },
   {
     id: "5",

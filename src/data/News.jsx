@@ -4,7 +4,7 @@ export const news = [
     label: "NEWS",
     title: "Biden asks Congress for $33 billion to support Ukraine",
     content:
-      "Lorem Ipsum is simply dummy text of the printing and typesettin industry. Lorem Ipsum has been the industrys standard dummytext ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "The social-media company is in discussions to sell itself to Elon, a dramatic turn of events just 11 days after the. Blake Lemoine published conversations with the AI, which called a 'person', but Google said the evidence doesn't [...]",
     date: "Dec 14,2022",
     writtenBy: "Admin",
     comments: 55,
@@ -15,7 +15,7 @@ export const news = [
     label: "POLITICS",
     title: "Putin 'preparing to starve' parts of developing world",
     content:
-      "Lorem Ipsum is simply dummy text of the printing and typesettin industry. Lorem Ipsum has been the industrys standard dummytext ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "The social-media company is in discussions to sell itself to Elon, a dramatic turn of events just 11 days after the. Blake Lemoine published conversations with the AI, which called a 'person', but Google said the evidence doesn't [...]",
     date: "Dec 14,2022",
     writtenBy: "Admin",
     comments: 55,
@@ -31,7 +31,7 @@ export const news = [
     date: "Dec 14,2022",
     writtenBy: "Admin",
     comments: 55,
-    img: "/pic1.png",
+    img: "/top-part-img/congress.png",
   },
   {
     id: 4,
@@ -42,7 +42,7 @@ export const news = [
     date: "Dec 14,2022",
     writtenBy: "Admin",
     comments: 55,
-    img: "/pic1.png",
+    img: "/top-part-img/stock market.png",
   },
   {
     id: 5,
@@ -53,6 +53,6 @@ export const news = [
     date: "Dec 14,2022",
     writtenBy: "Admin",
     comments: 55,
-    img: "/pic2.png",
+    img: "/top-part-img/Norway.png",
   },
 ];

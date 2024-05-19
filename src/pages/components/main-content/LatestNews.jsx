@@ -32,7 +32,7 @@ export default function LatestNews({ infos = [], trendingNews = [] }) {
           <p className="fw-bold">TRENDING POSTS</p>
           <TreningCardOverlay />
           {trendingNews.map((trending) => (
-            <CardWithNum trending={trending} />
+            <CardWithNum trending={trending} key={trending.content} />
           ))}
           <div className="d-flex align-items-center text-muted mt-4">
             <span>See all posts</span>

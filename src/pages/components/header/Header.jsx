@@ -4,7 +4,7 @@ import Calender from "./Calender";
 import Weather from "./Weather";
 import Navbar from "./Navbar";
 import HeaderIcons from "./HeaderIcons";
-import { Col, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import TabletMobileNav from "./TabletMobileNav";
 import SearchHeader from "./SearchHeader";
 
@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <div className="header">
       <div className="container-fluid bg-primary d-flex justify-content-center align-items-center d-xs-none">
-        <div className="container">
+        <Container>
           <Row>
             <Col lg={2} className="d-flex align-items-center">
               <h6 className="mt-1">Market Data Today</h6>
@@ -21,10 +21,10 @@ export default function Header() {
               <Ticker />
             </Col>
           </Row>
-        </div>
+        </Container>
       </div>
       <TabletMobileNav className="d-lg-none" />
-      <div className="container p-3 d-md-none d-none d-lg-block">
+      <Container className="p-3 d-md-none d-none d-lg-block">
         <div className="d-flex justify-content-between">
           <Row>
             <Col xs={4}>
@@ -43,7 +43,7 @@ export default function Header() {
           <Navbar />
           <HeaderIcons />
         </div>
-      </div>
+      </Container>
     </div>
   );
 }
