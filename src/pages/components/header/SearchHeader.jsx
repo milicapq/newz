@@ -4,7 +4,7 @@ import { Col, Row } from "react-bootstrap";
 
 export default function SearchHeader() {
   return (
-    <Row className="m-1">
+    <Row className="m-1 pointer">
       <Col xs={7}>
         <div className="underline d-flex align-items-center mt-4 ms-3">
           <LiaEnvelope />

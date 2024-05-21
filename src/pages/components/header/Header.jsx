@@ -15,7 +15,7 @@ export default function Header() {
         <Container>
           <Row>
             <Col lg={2} className="d-flex align-items-center">
-              <h6 className="mt-1">Market Data Today</h6>
+              <h6 className="mt-1 pointer">Market Data Today</h6>
             </Col>
             <Col lg={10}>
               <Ticker />
@@ -28,7 +28,7 @@ export default function Header() {
         <div className="d-flex justify-content-between">
           <Row>
             <Col xs={4}>
-              <img className="p-1" src="/Untitled.png" alt="" />
+              <img className="p-1 pointer" src="/Untitled.png" alt="" />
             </Col>
             <Col xs={4}>
               <Calender />

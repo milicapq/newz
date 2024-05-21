@@ -40,7 +40,7 @@ export default function TextOverCard({ latestNews }) {
   };
   return (
     <div
-      className={`card text-white bg-transparent rounded-0  ${
+      className={`card text-white bg-transparent rounded-0 pointer ${
         latestNews ? "heightNews" : ""
       }`}
     >

@@ -12,7 +12,12 @@ export default function TopColumnist() {
           <SlArrowRight className="ms-3 mb-1" />
         </div>
         {columnists.map((columnist) => (
-          <Col md={3} xs={6} key={columnist.id} className="border-0 border-end">
+          <Col
+            md={3}
+            xs={6}
+            key={columnist.id}
+            className="border-0 border-end pointer"
+          >
             <Card className="border-0">
               <div className="card-body d-flex flex-column">
                 <img

@@ -8,7 +8,7 @@ import { FaRegEnvelope } from "react-icons/fa6";
 import { FiPhone } from "react-icons/fi";
 export default function FooterInfo() {
   return (
-    <>
+    <div className="pointer">
       <h5 className="fw-bold mb-3">Newz - Business Magazine</h5>
       <div className="d-flex mb-2 mt-4">
         <SlHome />
@@ -36,6 +36,6 @@ export default function FooterInfo() {
           <FiYoutube />
         </div>
       </div>
-    </>
+    </div>
   );
 }

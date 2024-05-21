@@ -5,7 +5,7 @@ import DateUserComment from "./DateUserComment";
 export default function Card({ newz }) {
   return (
     <div
-      className={`card mb-4 mt-4 border-0 ${
+      className={`card mb-4 mt-4 border-0 pointer ${
         (newz?.id == 2 && "border-end-0") || (newz.id < 5 && "border-end")
       } `}
     >

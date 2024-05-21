@@ -5,7 +5,7 @@ import DateUserComment from "./DateUserComment";
 
 export default function HorizontalCard({ info, underline }) {
   return (
-    <div className="card mb-3 p-2 border-0 border-bottom mt-2 rounded-0 bg-transparent">
+    <div className="card mb-3 p-2 border-0 border-bottom mt-2 rounded-0 bg-transparent pointer">
       <Row className="g-0">
         <Col xs={8}>
           <Sticker label={info.label} video={info.video} />

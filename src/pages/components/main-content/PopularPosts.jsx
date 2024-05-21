@@ -31,7 +31,7 @@ export default function PopularPosts() {
         </Col>
         <Col lg={3} md={12} className="mt-4 border-start px-4">
           <Row>
-            <Col md={6} lg={12}>
+            <Col md={6} lg={12} className="pointer">
               <span>STAY CONNECTED</span>
               <div className="card rounded-0 mt-3">
                 <div className="card-body">

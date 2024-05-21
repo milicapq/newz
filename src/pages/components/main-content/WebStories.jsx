@@ -2,7 +2,7 @@ import React from "react";
 
 export default function WebStories() {
   return (
-    <div className="mt-3 border-top py-4">
+    <div className="mt-3 border-top py-4 pointer">
       <span className="fw-bold">GOOGLE WEB STORIES</span>
       <div className="border-bottom p-2 mt-3">
         <img

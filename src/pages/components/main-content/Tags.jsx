@@ -14,7 +14,7 @@ export default function Tags() {
     "Hackers",
   ];
   return (
-    <div className="border-top mt-4 py-4">
+    <div className="border-top mt-4 py-4 pointer">
       <span className="fw-bold">HOT TAGS TODAY</span>
       <div className="card rounded-0 mt-3">
         <div className="card-body d-flex flex-wrap">

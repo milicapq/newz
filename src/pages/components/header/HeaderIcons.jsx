@@ -6,7 +6,7 @@ import { FiYoutube } from "react-icons/fi";
 
 export default function HeaderIcons() {
   return (
-    <div className="d-flex align-items-center gap-3 text-muted">
+    <div className="d-flex align-items-center gap-3 text-muted pointer">
       <IoLogoTwitter />
       <FaFacebookF />
       <IoLogoInstagram />
