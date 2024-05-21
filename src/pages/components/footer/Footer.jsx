@@ -16,22 +16,26 @@ export default function Footer() {
   ];
   const help = ["About", "Contact", "Advertise", "Career", "Policy", "FAQ"];
   return (
-    <div className="container-fluid bg-primary text-light">
+    <div className="container-fluid bg-primary text-light mt-5">
       <Container>
         <Row className="py-4">
           <Col lg={5} xs={12} md={4} className="py-4">
             <FooterInfo />
           </Col>
-          <Col xs={4} md={2} className="py-4" key={topics}>
+          <Col xs={4} md={2} className="py-4">
             <h5 className="mb-2 fw-bold">Topics</h5>
-            {topics.map((topic) => (
-              <p className="mt-4">{topic}</p>
+            {topics.map((topic, index) => (
+              <p className="mt-4" key={index}>
+                {topic}
+              </p>
             ))}
           </Col>
-          <Col xs={4} md={2} lg={2} className="py-4" key={help}>
+          <Col xs={4} md={2} lg={2} className="py-4">
             <h5 className="mb-2 fw-bold">Help</h5>
-            {help.map((item) => (
-              <p className="mt-4">{item}</p>
+            {help.map((item, index) => (
+              <p className="mt-4" key={index}>
+                {item}
+              </p>
             ))}
           </Col>
           <Col xs={12} lg={3} md={12} className="py-4">

@@ -1,18 +1,9 @@
 import React, { useState } from "react";
 import { SlArrowRight } from "react-icons/sl";
 import { SlArrowLeft } from "react-icons/sl";
+import { textOverCardData } from "../../../data/LatestNewsData";
 
-export default function PageNavigation() {
-  const data = ["ghbjn", "fgvhbnj"];
-  const [recordsPerPage] = useState(5);
-  const nPages = Math.ceil(data.length / recordsPerPage);
-  const [currentPage, setCurrentPage] = useState(1);
-  const goToNextPage = () => {
-    if (currentPage !== nPages) setCurrentPage(currentPage + 1);
-  };
-  const goToPrevPage = () => {
-    if (currentPage !== 1) setCurrentPage(currentPage - 1);
-  };
+export default function PageNavigation({ handleNextClick, handlePrevClick }) {
   return (
     <nav aria-label="Page navigation example">
       <ul className="pagination m-auto p-1">
@@ -21,7 +12,7 @@ export default function PageNavigation() {
             className="page-link"
             href="#"
             aria-label="Previous"
-            onClick={goToPrevPage}
+            onClick={handlePrevClick}
           >
             <span aria-hidden="true">
               <SlArrowLeft className="text-muted" />
@@ -29,7 +20,12 @@ export default function PageNavigation() {
           </a>
         </li>
         <li className="page-item">
-          <a className="page-link" href="#" aria-label="Next">
+          <a
+            className="page-link"
+            href="#"
+            aria-label="Next"
+            onClick={handleNextClick}
+          >
             <span aria-hidden="true">
               <SlArrowRight className="text-muted" />
             </span>

@@ -16,18 +16,17 @@ export default function LatestNews({ infos = [], trendingNews = [] }) {
             <p className="fw-bold">LATEST NEWS</p>
             <SlArrowRight className="mt-1 ms-3" />
           </div>
-          <TextOverCard />
+          <TextOverCard latestNews={true} />
         </Col>
         <Col lg={4} md={6} className="mt-4 border-end">
           {infos.map((info) => (
-            <HorizontalCard info={info} />
+            <HorizontalCard info={info} key={info.content} />
           ))}
           <div className="d-flex align-items-center text-muted">
             <span>See all posts</span>
             <MdKeyboardArrowRight />
           </div>
         </Col>
-
         <Col lg={3} md={6}>
           <p className="fw-bold">TRENDING POSTS</p>
           <TreningCardOverlay />

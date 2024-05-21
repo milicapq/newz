@@ -14,7 +14,7 @@ export default function WebStories() {
       </div>
       <div className="border-bottom p-2">
         <img
-          className="w-25 rounded-circle p-1 border border-danger"
+          className="w-25 rounded-circle p-1 border border-muted"
           src="/Untitled1.png"
           alt=""
         />

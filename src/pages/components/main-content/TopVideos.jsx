@@ -20,8 +20,12 @@ export default function TopVideos() {
           </Col>
           <Col md={4} className="px-4 video-underline">
             <span className="text-light ms-2">VIDEOS UP NEXT</span>
-            {nextVideos.map((video) => (
-              <HorizontalCard info={video} key={video.label} />
+            {nextVideos.map((video, index) => (
+              <HorizontalCard
+                info={video}
+                key={video.label}
+                underline={index === 0}
+              />
             ))}
             <div className="d-flex align-items-center text-light">
               <span className="ms-1 mt-5">See all posts</span>

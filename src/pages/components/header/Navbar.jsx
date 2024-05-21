@@ -6,8 +6,8 @@ export default function Navbar() {
   const dropdown = ["Demo", "Features", "Shop"];
   return (
     <ul className="nav py-1 mt-lg-2 d-flex flex-column flex-lg-row gap-3">
-      {dropdown.map((drop) => (
-        <div className="dropdown">
+      {dropdown.map((drop, index) => (
+        <div className="dropdown" key={index}>
           <button
             className="btn px-0 mt-2"
             type="button"
@@ -16,7 +16,7 @@ export default function Navbar() {
             aria-expanded="false"
           >
             {drop}
-            <MdKeyboardArrowDown className="ms-2" key={drop} />
+            <MdKeyboardArrowDown className="ms-2" />
           </button>
           <ul className="dropdown-menu" aria-labelledby="dropdownMenu2">
             <li>
@@ -41,7 +41,10 @@ export default function Navbar() {
       {navbar.map((nav) => (
         <li className="nav-item">
           {nav === "News" ? (
-            <div className="bg-primary rounded position-absolute ms-5 gap-3">
+            <div
+              className="bg-primary rounded position-absolute ms-5 gap-3"
+              key={nav}
+            >
               <span className="text-light p-1">HOT</span>
             </div>
           ) : (

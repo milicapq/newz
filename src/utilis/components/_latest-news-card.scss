@@ -3,8 +3,11 @@
   right: 0;
   left: 0;
 }
-.video-underline {
-  h5 {
-    text-decoration: underline;
-  }
+
+.heightNews {
+  height: 600px;
+}
+
+.bi-play-circle::before {
+  font-size: 100px;
 }

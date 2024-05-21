@@ -11,7 +11,7 @@ export default function Pagination() {
         </Sticker>
         <div className="pagination-text d-flex align-items-center bg-secondary">
           <div className="pag d-flex align-items-center justify-content-center p-2">
-            <span className="mx-md-3 border-bottom">
+            <span className="mx-md-3 underline">
               The biggest takeaways from the first Jan 6, 6 hearing
             </span>
             <span className="mx-4 d-none d-lg-block"></span>

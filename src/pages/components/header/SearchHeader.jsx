@@ -6,7 +6,7 @@ export default function SearchHeader() {
   return (
     <Row className="m-1">
       <Col xs={7}>
-        <div className="border-bottom d-flex align-items-center mt-4 ms-3">
+        <div className="underline d-flex align-items-center mt-4 ms-3">
           <LiaEnvelope />
           <span className="ms-3">SUBSCRIBE</span>
         </div>

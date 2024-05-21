@@ -10,15 +10,15 @@ function Column({ cardInfo, horizontalCardInfo }) {
     <div>
       {cardInfo.map((info) => (
         <>
-          <div className="d-flex mt-4 ms-3">
+          <div className="d-flex mt-4 ms-3" key={info.title}>
             <h6 className="mb-4 text-dark">{info?.category}</h6>
             <SlArrowRight className="ms-3 mb-1" />
           </div>
-          <Card newz={info} key={info.title} />
+          <Card newz={info} />
         </>
       ))}
       {horizontalCardInfo.map((info) => (
-        <HorizontalCard info={info} />
+        <HorizontalCard info={info} key={info.img} />
       ))}
     </div>
   );
@@ -28,7 +28,7 @@ export default function BottomSection() {
     <Container>
       <Row>
         {bottomInfo.map((column) => (
-          <Col md={12} lg={4} className="border-end">
+          <Col md={12} lg={4} className="border-end" key={column.id}>
             <Column
               cardInfo={column.cardInfo}
               horizontalCardInfo={column.horizontalCardInfo}

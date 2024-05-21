@@ -4,9 +4,9 @@ import { IoCalendarOutline } from "react-icons/io5";
 import { GoPerson } from "react-icons/go";
 import { MdOutlineInsertComment } from "react-icons/md";
 
-export default function DateUserComment({ newz }) {
+export default function DateUserComment({ newz, lightDate }) {
   return (
-    <Row className="text-muted">
+    <Row className={` ${lightDate ? "text-light" : "text-muted"} px-lg-0`}>
       <Col xs={newz?.id > 2 ? "5" : "3"}>
         <IoCalendarOutline className="mb-1" />
         <span className="ms-2">{newz?.date}</span>
