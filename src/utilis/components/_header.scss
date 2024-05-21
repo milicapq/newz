@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin: 0;
 }
+
 .header {
   .border-bottom {
     border-bottom: 2px solid black !important;
@@ -25,5 +26,10 @@ h6 {
 li {
   .nav-link {
     color: #000000;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .underline {
+    border-bottom: 1px solid #000000;
   }
 }

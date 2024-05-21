@@ -19,7 +19,7 @@ export default function Tags() {
       <div className="card rounded-0 mt-3">
         <div className="card-body d-flex flex-wrap">
           {buttons.map((button) => (
-            <div className="border m-1 p-1">
+            <div className="border m-1 p-1" key={button}>
               <span>{button} </span>
             </div>
           ))}
