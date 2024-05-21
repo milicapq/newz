@@ -11,14 +11,14 @@ export default function LatestNews({ infos = [], trendingNews = [] }) {
   return (
     <Container className="border-top mt-3">
       <Row className="mt-5">
-        <Col lg={5}>
+        <Col lg={6}>
           <div className="d-flex">
             <p className="fw-bold">LATEST NEWS</p>
             <SlArrowRight className="mt-1 ms-3" />
           </div>
           <TextOverCard latestNews={true} />
         </Col>
-        <Col lg={4} md={6} className="mt-4 border-end">
+        <Col lg={3} md={6} className="mt-4 border-end">
           {infos.map((info) => (
             <HorizontalCard info={info} key={info.content} />
           ))}
