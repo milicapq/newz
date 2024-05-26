@@ -5,8 +5,8 @@ import DateUserComment from "./DateUserComment";
 
 export default function HorizontalCard({ info, underline }) {
   return (
-    <div className="card mb-3 p-2 border-0 border-bottom mt-2 rounded-0 bg-transparent pointer">
-      <Row className="g-0">
+    <div className="card mb-3 pe-4 mt-2 border-0 border-bottom rounded-0 bg-transparent pointer">
+      <Row className="g-3">
         <Col xs={8}>
           <Sticker label={info.label} video={info.video} />
           <div className="card-body p-0 mt-2">
@@ -21,10 +21,10 @@ export default function HorizontalCard({ info, underline }) {
         </Col>
         <Col xs={4}>
           {info?.img && (
-            <img src={info.img} className="img-fluid rounded-start" alt="..." />
+            <img src={info.img} className="img-fluid rounded w-100" alt="..." />
           )}
         </Col>
-        {!info.video && info.comment ? <DateUserComment newz={info} /> : ""}
+        {!info.video && info.comments ? <DateUserComment newz={info} /> : ""}
       </Row>
     </div>
   );

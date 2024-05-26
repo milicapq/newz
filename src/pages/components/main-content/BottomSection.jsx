@@ -7,7 +7,7 @@ import { SlArrowRight } from "react-icons/sl";
 
 function Column({ cardInfo, horizontalCardInfo }) {
   return (
-    <div>
+    <div className="border-end">
       {cardInfo.map((info) => (
         <>
           <div className="d-flex mt-4 ms-3" key={info.title}>
@@ -26,9 +26,9 @@ function Column({ cardInfo, horizontalCardInfo }) {
 export default function BottomSection() {
   return (
     <Container>
-      <Row>
+      <Row className="border-top mt-3">
         {bottomInfo.map((column) => (
-          <Col md={12} lg={4} className="border-end" key={column.id}>
+          <Col md={12} lg={4} className="mt-5" key={column.id}>
             <Column
               cardInfo={column.cardInfo}
               horizontalCardInfo={column.horizontalCardInfo}

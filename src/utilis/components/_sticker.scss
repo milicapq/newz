@@ -5,7 +5,8 @@
   padding: 0.5rem 0;
   position: relative;
   z-index: 1;
-  @media only screen and (min-width: 400px) {
+
+  @media only screen and (min-width: 490px) {
     :after {
       content: "";
       border-left: 25px solid transparent;
@@ -51,7 +52,7 @@
       content: "";
       border-left: 10px solid transparent;
       border-right: 20px solid transparent;
-      border-top: 20px solid var(--_current-color);
+      border-top: 19px solid var(--_current-color);
       position: absolute;
       right: -20px;
       z-index: -1;

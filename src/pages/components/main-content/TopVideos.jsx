@@ -15,11 +15,11 @@ export default function TopVideos() {
           <SlArrowRight className="ms-3 mb-1 text-light" />
         </div>
         <Row>
-          <Col md={8} className="border-end">
+          <Col lg={8} className="border-end">
             <TextOverCard />
           </Col>
-          <Col md={4} className="px-4 video-underline">
-            <span className="text-light ms-2">VIDEOS UP NEXT</span>
+          <Col lg={4} className="px-lg-4 video-underline">
+            <p className="text-light ms-2 mt-md-4">VIDEOS UP NEXT</p>
             {nextVideos.map((video, index) => (
               <HorizontalCard
                 info={video}

@@ -9,7 +9,14 @@ export default function MainContent() {
       <Row>
         {news.slice(0, 2).map((newz) => (
           <Col md={6} key={newz.id}>
-            <Card newz={newz} />
+            <div
+              className={`px-3  ${
+                (newz?.id == 2 && "border-end-0") ||
+                (newz.id < 5 && "border-end")
+              } `}
+            >
+              <Card newz={newz} />
+            </div>
           </Col>
         ))}
       </Row>
@@ -18,7 +25,9 @@ export default function MainContent() {
           <Col
             md={6}
             lg={4}
-            className="border-top border-bottom mt-3"
+            className={`px-4 border-top ${
+              (newz?.id == 2 && "border-end-0") || (newz.id < 5 && "border-end")
+            } `}
             key={newz.title}
           >
             <Card newz={newz} />

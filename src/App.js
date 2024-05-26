@@ -11,7 +11,6 @@ import TopColumnist from "./pages/components/main-content/TopColumnist";
 import TopVideos from "./pages/components/main-content/TopVideos";
 import { infos } from "./data/LatestNewsData";
 import { trendingNews } from "./data/TrendingNewsData";
-import { useState } from "react";
 
 function App() {
   return (

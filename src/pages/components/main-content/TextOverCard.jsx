@@ -1,13 +1,11 @@
 import React, { useState } from "react";
 import PageNavigation from "./PageNavigation";
 import Sticker from "./Sticker";
-import { IoPlayCircle } from "react-icons/io5";
-import { textOverCardData } from "../../../data/LatestNewsData";
 import DateUserComment from "./DateUserComment";
 
 export default function TextOverCard({ latestNews }) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [info, setInfo] = useState([
+  const info = [
     {
       img: "/pic1.png",
       title: "Forbes #3: Top 10 Businessman NYC",
@@ -15,6 +13,7 @@ export default function TextOverCard({ latestNews }) {
         "Its first decline in subscribers since 2011 triggered a $54 billion stock value loss and [...]",
       date: "dec 24, 2022",
       comments: 12,
+      video: true,
     },
     {
       img: "/pic2.png",
@@ -23,8 +22,9 @@ export default function TextOverCard({ latestNews }) {
         "Its first decline in subscribers since 2011 triggered a $54 billion stock value loss and [...]",
       date: "dec 24, 2022",
       comments: 12,
+      video: true,
     },
-  ]);
+  ];
   const handlePrevClick = (e) => {
     if (currentIndex > 0) {
       setCurrentIndex(currentIndex - 1);
@@ -53,14 +53,15 @@ export default function TextOverCard({ latestNews }) {
         <div className="d-flex justify-content-between">
           <Sticker label={"BUSINESS"} />
           <PageNavigation
-            className={`${"col - 3" && "d - none"} `}
             handleNextClick={handleNextClick}
             handlePrevClick={handlePrevClick}
           />
         </div>
-        <i className="bi bi-play-circle m-auto"> </i>
+        {info[currentIndex].video && (
+          <i className="bi bi-play-circle m-auto"> </i>
+        )}
         <div>
-          <h5 className="card-title">{info[currentIndex].title}</h5>
+          <h3 className="card-title">{info[currentIndex].title}</h3>
           <p className="card-text">{info[currentIndex].content}</p>
           <DateUserComment lightDate={true} newz={info[currentIndex]} />
         </div>

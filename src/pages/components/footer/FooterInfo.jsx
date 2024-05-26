@@ -9,8 +9,8 @@ import { FiPhone } from "react-icons/fi";
 export default function FooterInfo() {
   return (
     <div className="pointer">
-      <h5 className="fw-bold mb-3">Newz - Business Magazine</h5>
-      <div className="d-flex mb-2 mt-4">
+      <h3 className="fw-bold mb-3">Newz - Business Magazine</h3>
+      <div className="d-flex mb-2 mt-4 pt-2">
         <SlHome />
         <span className="px-3">223 Orcaard St, Manhattan, NY 032</span>
       </div>

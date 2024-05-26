@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Gloock&display=swap");
 
-h3 {
+h3,
+h5 {
   font-family: Gloock sans-serif;
 }
 .live-circle {
@@ -10,5 +11,13 @@ h3 {
     height: 5px;
     width: 5px;
     border-radius: 50%;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .card {
+    border: none !important;
+  }
+  .border-end {
+    border: none !important;
   }
 }

@@ -35,3 +35,31 @@ li {
     border-bottom: 1px solid #000000;
   }
 }
+.dropdown-item {
+  input {
+    background-color: #ffff;
+    border: none;
+  }
+  ::placeholder {
+    color: #000000;
+  }
+}
+input,
+.header-newsletter {
+  background-color: #44677b;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.header-newsletter {
+  width: 65%;
+  padding: 8px 0 8px 0;
+}
+.header-newsletter:hover {
+  cursor: pointer;
+}
+.header-newsletter span {
+  width: 40px;
+  height: 40px;
+}

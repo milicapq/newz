@@ -11,14 +11,14 @@ export default function LatestNews({ infos = [], trendingNews = [] }) {
   return (
     <Container className="border-top mt-3">
       <Row className="mt-5">
-        <Col lg={6}>
+        <Col lg={5}>
           <div className="d-flex">
-            <p className="fw-bold">LATEST NEWS</p>
+            <p className="fw-bold pb-3">LATEST NEWS</p>
             <SlArrowRight className="mt-1 ms-3" />
           </div>
           <TextOverCard latestNews={true} />
         </Col>
-        <Col lg={3} md={6} className="mt-4 border-end">
+        <Col lg={4} md={6} className="pt-5 px-4">
           {infos.map((info) => (
             <HorizontalCard info={info} key={info.content} />
           ))}
@@ -27,9 +27,11 @@ export default function LatestNews({ infos = [], trendingNews = [] }) {
             <MdKeyboardArrowRight />
           </div>
         </Col>
-        <Col lg={3} md={6}>
+        <Col lg={3} md={6} className="border-start ps-4">
           <p className="fw-bold">TRENDING POSTS</p>
-          <TreningCardOverlay />
+          <div className="mt-4">
+            <TreningCardOverlay />
+          </div>
           {trendingNews.map((trending) => (
             <CardWithNum trending={trending} key={trending.content} />
           ))}

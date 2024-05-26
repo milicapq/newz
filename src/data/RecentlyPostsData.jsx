@@ -4,7 +4,7 @@ export const recentlyPosts = [
     label: "MARKET",
     title: "The transportation market shows signs of revival",
     date: "Dec 14,2022",
-    comment: 4,
+    comments: 4,
     img: "/recently-posts-img/transport.png",
   },
   {
@@ -12,7 +12,7 @@ export const recentlyPosts = [
     label: "MARKET",
     title: "Become the leader of agency, Let be a lion!",
     date: "Dec 14,2022",
-    comment: 4,
+    comments: 4,
     img: "/recently-posts-img/lion.png",
   },
   {
@@ -20,7 +20,7 @@ export const recentlyPosts = [
     label: "MARKET",
     title: "Mr. Erick - CTO of Tesla",
     date: "Dec 1,2022",
-    comment: 4,
+    comments: 4,
     img: "/recently-posts-img/mr. erick.png",
   },
   {
@@ -28,7 +28,7 @@ export const recentlyPosts = [
     label: "MARKET",
     title: "Brian get successful with new Scooter in Thailand",
     date: "Dec 1,2022",
-    comment: 4,
+    comments: 4,
     img: "/recently-posts-img/scooter.png",
   },
   {
@@ -37,6 +37,6 @@ export const recentlyPosts = [
     title:
       "Sample post with only text that without image and double line height",
     date: "Dec 1,2022",
-    comment: 4,
+    comments: 4,
   },
 ];

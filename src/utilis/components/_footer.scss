@@ -22,3 +22,8 @@ input,
 .input-bg {
   background-color: #44677b;
 }
+.input-bg {
+  input::placeholder {
+    color: #fff;
+  }
+}
