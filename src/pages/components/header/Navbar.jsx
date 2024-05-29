@@ -38,13 +38,10 @@ export default function Navbar() {
         </div>
       ))}
 
-      {navbar.map((nav) => (
-        <li className="nav-item">
+      {navbar.map((nav, index) => (
+        <li className="nav-item" key={index}>
           {nav === "News" ? (
-            <div
-              className="bg-primary rounded position-absolute ms-5 gap-3"
-              key={nav}
-            >
+            <div className="bg-primary rounded position-absolute ms-5 gap-3">
               <span className="text-light p-1">HOT</span>
             </div>
           ) : (

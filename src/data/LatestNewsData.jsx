@@ -28,7 +28,7 @@ export const infoVideo = [
       "Its first decline in subscribers since 2011 triggered a $54 billion stock value loss and [...]",
     date: "dec 24, 2022",
     comments: 12,
-    video: true,
+    video: false,
   },
   {
     img: "/pic2.png",
@@ -37,6 +37,6 @@ export const infoVideo = [
       "Its first decline in subscribers since 2011 triggered a $54 billion stock value loss and [...]",
     date: "dec 24, 2022",
     comments: 12,
-    video: true,
+    video: false,
   },
 ];

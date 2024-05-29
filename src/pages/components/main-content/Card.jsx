@@ -4,7 +4,7 @@ import DateUserComment from "./DateUserComment";
 
 export default function Card({ newz }) {
   return (
-    <div className="card mb-4 mt-4 pe-2 border-0 pointer">
+    <div className="card pe-2 border-0 pointer">
       <div className="card-body p-0">
         <div className="d-flex gap-2">
           {newz.live ? (

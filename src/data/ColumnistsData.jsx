@@ -30,4 +30,35 @@ export const columnists = [
     specializeIn: "ECOMONICS",
     content: "My content focus into business politic that allows anyone",
   },
+  {
+    id: 5,
+    img: "/top-columnist-img/Conor.png",
+    name: "Conor Bradley",
+    specializeIn: "BUSINESS, NEWS",
+    content:
+      "My content focus into business politic that allows anyone with a cellphone to scan cultural landmarks and monuments in danger",
+  },
+  {
+    id: 6,
+    img: "/top-columnist-img/luis diaz.png",
+    name: "Luis Diaz",
+    specializeIn: "BUSINESS, MARKET",
+    content:
+      "My content focus into business politic that allows anyone with a cellphone to scan",
+  },
+  {
+    id: 7,
+    img: "/top-columnist-img/alberto moreno1.png",
+    name: "Alberto Moreno",
+    specializeIn: "BUSINESS, TECHNOLOGY",
+    content:
+      "My content focus into business politic that allows anyone with a cellphone to scan cultural landmarks and monum",
+  },
+  {
+    id: 8,
+    img: "/top-columnist-img/darwin nunez.png",
+    name: "Darwin Nunez",
+    specializeIn: "ECOMONICS",
+    content: "My content focus into business politic that allows anyone",
+  },
 ];

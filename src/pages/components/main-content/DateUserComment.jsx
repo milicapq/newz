@@ -9,7 +9,7 @@ export default function DateUserComment({ newz, lightDate }) {
     <div
       className={` ${
         lightDate ? "text-light" : "text-muted"
-      } px-lg-2 d-flex gap-4 my-4`}
+      } d-flex gap-4 my-4`}
     >
       <div className={newz?.id > 2 ? "5" : "3"}>
         <IoCalendarOutline className="mb-1" />
@@ -28,7 +28,7 @@ export default function DateUserComment({ newz, lightDate }) {
         <div className="d-flex">
           <MdOutlineInsertComment className="mt-1" />
           <span className="px-2">{newz?.comments}</span>
-          <span> Comments</span>
+          <span className={`${newz?.comment && "d-none"} `}> Comments</span>
         </div>
       </div>
     </div>

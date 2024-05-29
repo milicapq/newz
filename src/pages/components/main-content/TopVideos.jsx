@@ -5,31 +5,32 @@ import HorizontalCard from "./HorizontalCard";
 import { nextVideos } from "../../../data/NextVideos";
 import { SlArrowRight } from "react-icons/sl";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import { topVideosOverCard } from "../../../data/TopVideosOverCard";
 
 export default function TopVideos() {
   return (
-    <div className="container-fluid bg-dark p-3">
+    <div className="container-fluid bg-dark p-3 mt-5">
       <Container className="container py-3">
-        <div className="py-2">
+        <div className="py-4">
           <span className="text-light">TOP VIDEOS LAST WEEK</span>
           <SlArrowRight className="ms-3 mb-1 text-light" />
         </div>
         <Row>
           <Col lg={8} className="border-end">
-            <TextOverCard />
+            <TextOverCard TextOverCardInfo={topVideosOverCard} />
           </Col>
           <Col lg={4} className="px-lg-4 video-underline">
-            <p className="text-light ms-2 mt-md-4">VIDEOS UP NEXT</p>
+            <p className="text-light ms-2 ms-lg-0 mt-md-4 mt-lg-0">
+              VIDEOS UP NEXT
+            </p>
             {nextVideos.map((video, index) => (
-              <HorizontalCard
-                info={video}
-                key={video.label}
-                underline={index === 0}
-              />
+              <div className="pt-3 pb-1" key={video.label}>
+                <HorizontalCard info={video} underline={index === 0} />
+              </div>
             ))}
             <div className="d-flex align-items-center text-light">
-              <span className="ms-1 mt-5">See all posts</span>
-              <MdKeyboardArrowRight className="mt-5" />
+              <span className="ms-1">See all posts</span>
+              <MdKeyboardArrowRight />
             </div>
           </Col>
         </Row>

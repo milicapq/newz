@@ -32,7 +32,7 @@ export const recentlyPosts = [
     img: "/recently-posts-img/scooter.png",
   },
   {
-    id: "7",
+    id: "77",
     label: "MARKET",
     title:
       "Sample post with only text that without image and double line height",

@@ -2,29 +2,11 @@ import React, { useState } from "react";
 import PageNavigation from "./PageNavigation";
 import Sticker from "./Sticker";
 import DateUserComment from "./DateUserComment";
+// import { TextOverCardInfo } from "../../../data/TextOverCardData";
 
-export default function TextOverCard({ latestNews }) {
+export default function TextOverCard({ latestNews, TextOverCardInfo }) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const info = [
-    {
-      img: "/pic1.png",
-      title: "Forbes #3: Top 10 Businessman NYC",
-      content:
-        "Its first decline in subscribers since 2011 triggered a $54 billion stock value loss and [...]",
-      date: "dec 24, 2022",
-      comments: 12,
-      video: true,
-    },
-    {
-      img: "/pic2.png",
-      title: "Forbes #3: Top 12 Businessman NYC",
-      content:
-        "Its first decline in subscribers since 2011 triggered a $54 billion stock value loss and [...]",
-      date: "dec 24, 2022",
-      comments: 12,
-      video: true,
-    },
-  ];
+
   const handlePrevClick = (e) => {
     if (currentIndex > 0) {
       setCurrentIndex(currentIndex - 1);
@@ -33,7 +15,7 @@ export default function TextOverCard({ latestNews }) {
   };
 
   const handleNextClick = (e) => {
-    if (currentIndex < info.length - 1) {
+    if (currentIndex < TextOverCardInfo.length - 1) {
       setCurrentIndex(currentIndex + 1);
       e.preventDefault();
     }
@@ -44,28 +26,35 @@ export default function TextOverCard({ latestNews }) {
         latestNews ? "heightNews" : ""
       }`}
     >
-      <img
-        src={info[currentIndex].img}
-        className={`height ${latestNews && "heightNews"}`}
-        alt="..."
-      />
-      <div className="card-img-overlay d-flex flex-column justify-content-between p-4">
-        <div className="d-flex justify-content-between">
-          <Sticker label={"BUSINESS"} />
-          <PageNavigation
-            handleNextClick={handleNextClick}
-            handlePrevClick={handlePrevClick}
-          />
-        </div>
-        {info[currentIndex].video && (
-          <i className="bi bi-play-circle m-auto"> </i>
-        )}
-        <div>
-          <h3 className="card-title">{info[currentIndex].title}</h3>
-          <p className="card-text">{info[currentIndex].content}</p>
-          <DateUserComment lightDate={true} newz={info[currentIndex]} />
-        </div>
-      </div>
+      {TextOverCardInfo.slice(currentIndex, currentIndex + 1).map(
+        (overCard) => (
+          <div key={overCard.pagination}>
+            <img
+              src={overCard?.img}
+              className={`${latestNews && "heightNews"}`}
+              alt="..."
+            />
+            <div className="card-img-overlay d-flex flex-column justify-content-between px-5 mt-2">
+              <div className="d-flex justify-content-between">
+                <Sticker label={"BUSINESS"} />
+                {overCard.pagination && (
+                  <PageNavigation
+                    className={`${"col - 6" && "d - none"} `}
+                    handleNextClick={handleNextClick}
+                    handlePrevClick={handlePrevClick}
+                  />
+                )}
+              </div>
+              {overCard?.video && <i className="bi bi-play-circle m-auto"> </i>}
+              <div>
+                <h3 className="card-title">{overCard?.title}</h3>
+                <p className="card-text">{overCard?.content}</p>
+                <DateUserComment lightDate={true} newz={overCard} />
+              </div>
+            </div>
+          </div>
+        )
+      )}
     </div>
   );
 }

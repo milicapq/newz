@@ -31,7 +31,7 @@ export const bottomInfo = [
         img: "bottom-part-img/one-way1.png",
       },
       {
-        id: 4,
+        id: 78,
         heading: "BUSINESS",
         label: "BUSINESS",
         title: "The partnership between Google & Shopify",
@@ -71,7 +71,7 @@ export const bottomInfo = [
         img: "bottom-part-img/architecture.png",
       },
       {
-        id: 8,
+        id: 77,
         heading: "POLITICS",
         label: "POLITICS",
         title: "Disputes in the South",

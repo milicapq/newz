@@ -11,8 +11,8 @@ export default function Example() {
     <>
       <Button variant="light" onClick={handleShow}>
         <div className="d-flex underline">
-          <i className="bi bi-envelope pt-1"></i>
-          <p className="mb-0 text-dark fw-bold ms-3 pt-1">SUBSCRIBE</p>
+          <i className="bi bi-envelope mt-1 px-1"></i>
+          <h6 className="mb-0 text-dark fw-bold ms-2 mt-2">SUBSCRIBE</h6>
         </div>
       </Button>
 

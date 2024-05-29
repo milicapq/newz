@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { SlArrowRight } from "react-icons/sl";
 import { SlArrowLeft } from "react-icons/sl";
-import { textOverCardData } from "../../../data/LatestNewsData";
 
 export default function PageNavigation({ handleNextClick, handlePrevClick }) {
   return (
