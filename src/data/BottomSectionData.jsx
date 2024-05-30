@@ -24,14 +24,14 @@ export const bottomInfo = [
         img: "bottom-part-img/sea.png",
       },
       {
-        id: 3,
+        id: 4,
         heading: "BUSINESS",
         label: "BUSINESS",
         title: "One way method",
         img: "bottom-part-img/one-way1.png",
       },
       {
-        id: 78,
+        id: 8,
         heading: "BUSINESS",
         label: "BUSINESS",
         title: "The partnership between Google & Shopify",
@@ -57,7 +57,7 @@ export const bottomInfo = [
 
     horizontalCardInfo: [
       {
-        id: 6,
+        id: 3,
         heading: "POLITICS",
         label: "POLITICS",
         title: "The new US financial law takes effect today",
@@ -71,7 +71,7 @@ export const bottomInfo = [
         img: "bottom-part-img/architecture.png",
       },
       {
-        id: 77,
+        id: 8,
         heading: "POLITICS",
         label: "POLITICS",
         title: "Disputes in the South",

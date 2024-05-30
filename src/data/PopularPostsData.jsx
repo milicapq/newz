@@ -7,6 +7,7 @@ export const popularPosts = [
     comments: 4,
     img: "/popular-posts-img/stock-market.png",
     comment: true,
+    popularPost: true,
   },
   {
     id: "7",
@@ -16,6 +17,7 @@ export const popularPosts = [
     comments: 4,
     img: "/popular-posts-img/joe biden.png",
     comment: true,
+    popularPost: true,
   },
   {
     id: "5",
@@ -24,6 +26,7 @@ export const popularPosts = [
     date: "Dec 14,2022",
     comments: 4,
     comment: true,
+    popularPost: true,
   },
 ];
 export const popularPostsOverCard = [

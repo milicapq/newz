@@ -1,11 +1,9 @@
 .card-img-overlay {
-  position: absolute;
-  right: 0;
-  left: 0;
+  background: linear-gradient(to bottom, transparent 20%, black 100%);
 }
 @media only screen and (min-width: 1200px) {
   .heightNews {
-    height: 530px;
+    height: 550px;
   }
 }
 

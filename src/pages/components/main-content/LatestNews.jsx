@@ -31,7 +31,7 @@ export default function LatestNews({ infos = [], trendingNews = [] }) {
           </div>
         </Col>
         <Col lg={3} md={6} className="border-start ps-4">
-          <p className="fw-bold">TRENDING POSTS</p>
+          <p className="fw-bold mt-md-3 mt-lg-0">TRENDING POSTS</p>
           <div className="pt-3">
             <TrendingCardOverlay />
           </div>

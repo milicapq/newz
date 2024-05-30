@@ -9,7 +9,7 @@ import { topVideosOverCard } from "../../../data/TopVideosOverCard";
 
 export default function TopVideos() {
   return (
-    <div className="container-fluid bg-dark p-3 mt-5">
+    <div className="container-fluid bg-dark p-3 py-5">
       <Container className="container py-3">
         <div className="py-4">
           <span className="text-light">TOP VIDEOS LAST WEEK</span>
@@ -28,8 +28,8 @@ export default function TopVideos() {
                 <HorizontalCard info={video} underline={index === 0} />
               </div>
             ))}
-            <div className="d-flex align-items-center text-light">
-              <span className="ms-1">See all posts</span>
+            <div className="d-flex align-items-center text-light mt-2">
+              <span>See all posts</span>
               <MdKeyboardArrowRight />
             </div>
           </Col>

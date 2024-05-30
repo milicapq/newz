@@ -1,6 +1,6 @@
 export const nextVideos = [
   {
-    id: 1,
+    id: 122,
     label: "NEWS",
     title: "Strategy marketing of Fedex Inc",
     img: "/top-videos-img/fedex.png",

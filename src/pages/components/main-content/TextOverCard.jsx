@@ -22,24 +22,26 @@ export default function TextOverCard({ latestNews, TextOverCardInfo }) {
   };
   return (
     <div
-      className={`card text-white bg-transparent rounded-0 pointer ${
+      className={`card text-white bg-transparent rounded-0 border-0 pointer ${
         latestNews ? "heightNews" : ""
       }`}
     >
       {TextOverCardInfo.slice(currentIndex, currentIndex + 1).map(
         (overCard) => (
-          <div key={overCard.pagination}>
+          <>
             <img
               src={overCard?.img}
               className={`${latestNews && "heightNews"}`}
               alt="..."
             />
-            <div className="card-img-overlay d-flex flex-column justify-content-between px-5 mt-2">
+            <div
+              className="card-img-overlay d-flex flex-column justify-content-between px-5 mt-2"
+              key={overCard.pagination}
+            >
               <div className="d-flex justify-content-between">
                 <Sticker label={"BUSINESS"} />
                 {overCard.pagination && (
                   <PageNavigation
-                    className={`${"col - 6" && "d - none"} `}
                     handleNextClick={handleNextClick}
                     handlePrevClick={handlePrevClick}
                   />
@@ -48,11 +50,13 @@ export default function TextOverCard({ latestNews, TextOverCardInfo }) {
               {overCard?.video && <i className="bi bi-play-circle m-auto"> </i>}
               <div>
                 <h3 className="card-title">{overCard?.title}</h3>
-                <p className="card-text">{overCard?.content}</p>
+                <p className="card-text d-none d-lg-block">
+                  {overCard?.content}
+                </p>
                 <DateUserComment lightDate={true} newz={overCard} />
               </div>
             </div>
-          </div>
+          </>
         )
       )}
     </div>

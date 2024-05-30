@@ -28,7 +28,10 @@ export default function DateUserComment({ newz, lightDate }) {
         <div className="d-flex">
           <MdOutlineInsertComment className="mt-1" />
           <span className="px-2">{newz?.comments}</span>
-          <span className={`${newz?.comment && "d-none"} `}> Comments</span>
+          <span className={`${newz?.comment && "d-none"} d-none d-lg-block`}>
+            {" "}
+            Comments
+          </span>
         </div>
       </div>
     </div>

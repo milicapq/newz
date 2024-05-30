@@ -4,7 +4,11 @@ import DateUserComment from "./DateUserComment";
 
 export default function Card({ newz }) {
   return (
-    <div className="card pe-2 border-0 pointer">
+    <div
+      className={`card pe-2 border-0 pointer ${
+        newz.popularPost && "border-bottom pb-2"
+      }`}
+    >
       <div className="card-body p-0">
         <div className="d-flex gap-2">
           {newz.live ? (
@@ -17,11 +21,19 @@ export default function Card({ newz }) {
           )}
           <Sticker label={newz?.label} />
         </div>
-        <h3 className="fw-bold my-4">{newz.title}</h3>
+        {newz.popularPost ? (
+          <h5 className="fw-bold my-2">{newz.title}</h5>
+        ) : (
+          <h3 className="fw-bold my-3">{newz.title}</h3>
+        )}
         <p className={`${newz?.id > 2 && "d-none"}`}>{newz.content}</p>
         <DateUserComment newz={newz} />
       </div>
-      <img src={newz.img} className="mt-2 pe-3 w-100" alt="" />
+      <img
+        src={newz?.img}
+        className={`${newz.popularPost ? "pe-0 mb-3" : "pe-3"}`}
+        alt=""
+      />
     </div>
   );
 }

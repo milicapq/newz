@@ -7,8 +7,10 @@ export default function HorizontalCard({ info, underline }) {
   return (
     <div
       className={`card border-0 ${
-        info.id === "77" ? "border-0" : "border-bottom"
-      }  rounded-0 bg-transparent pointer`}
+        info.id === 8 || info.id === 12 ? "border-0" : "border-bottom"
+      }   ${
+        info?.id === 10 || info?.id <= 3 ? "border-top pt-4" : ""
+      } rounded-0 bg-transparent pointer`}
     >
       <Row className="g-2 mb-2">
         <Col className={`${!info.img ? "col-12" : "col-8"}`}>

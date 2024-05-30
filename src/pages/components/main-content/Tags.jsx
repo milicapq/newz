@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function Tags(e) {
+export default function Tags() {
   const [active, setActive] = useState(null);
   const buttons = [
     "Covid-19",
@@ -19,9 +19,9 @@ export default function Tags(e) {
   };
   return (
     <div className="border-top mt-4 py-4 pointer">
-      <span className="fw-bold">HOT TAGS TODAY</span>
+      <p className="fw-bold mt-3">HOT TAGS TODAY</p>
       <div className="card rounded-0 mt-4">
-        <div className="card-body d-flex flex-wrap">
+        <div className="card-body d-flex flex-wrap p-4">
           {buttons.map((button) => (
             <div
               className={`border m-1 p-1 ${

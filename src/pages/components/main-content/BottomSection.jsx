@@ -7,10 +7,13 @@ import { SlArrowRight } from "react-icons/sl";
 
 function Column({ cardInfo, horizontalCardInfo }) {
   return (
-    <div className="border-end">
+    <div>
       {cardInfo.map((info, index) => (
-        <div key={index} className="mb-3">
-          <div className="d-flex mt-4">
+        <div
+          key={index}
+          className={`${info?.id == 9 ? "border-0" : "border-end"} `}
+        >
+          <div className="d-flex mt-4 d-lg-none">
             <h6 className="mb-4 text-dark">{info?.category}</h6>
             <SlArrowRight className="ms-3 mb-1" />
           </div>
@@ -18,7 +21,12 @@ function Column({ cardInfo, horizontalCardInfo }) {
         </div>
       ))}
       {horizontalCardInfo.map((info, index) => (
-        <div className="pe-4 py-2" key={index}>
+        <div
+          className={`pe-4 py-2 mt-2 ${
+            info?.id >= 10 ? "border-0" : "border-end"
+          }`}
+          key={index}
+        >
           <HorizontalCard info={info} />
         </div>
       ))}
@@ -29,8 +37,21 @@ export default function BottomSection() {
   return (
     <Container>
       <Row className="border-top mt-3">
+        <Col lg={12}>
+          <Row className="d-flex justify-content-between pt-5 pb-3 fw-bold">
+            <Col>
+              BUSINESS <SlArrowRight className="mb-1" />
+            </Col>
+            <Col>
+              POLITICS <SlArrowRight className="mb-1" />
+            </Col>
+            <Col>
+              MARKET <SlArrowRight className="mb-1" />
+            </Col>
+          </Row>
+        </Col>
         {bottomInfo.map((column, index) => (
-          <Col md={12} lg={4} className="mt-5" key={index}>
+          <Col md={12} lg={4} className="mt-2" key={index}>
             <Column
               cardInfo={column.cardInfo}
               horizontalCardInfo={column.horizontalCardInfo}
