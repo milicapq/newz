@@ -3,13 +3,16 @@
   height: 35px;
   width: 35px;
 }
+
 .btn {
   cursor: pointer;
 }
+
 .send-icon:hover {
   background-color: #3d5c6e;
   cursor: pointer;
 }
+
 .circle {
   cursor: pointer;
   :hover {
@@ -25,6 +28,7 @@ input,
 .input-bg {
   background-color: #44677b;
 }
+
 .input-bg {
   input::placeholder {
     color: #fff;

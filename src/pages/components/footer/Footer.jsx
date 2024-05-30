@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { IoIosArrowUp } from "react-icons/io";
 import FooterInfo from "./FooterInfo";
 import FooterInput from "./FooterInput";
 
@@ -21,10 +20,13 @@ export default function Footer() {
     { language1: "French", image: "/footer-img/france.png" },
     { language1: "Germany", image: "/footer-img/germany.png" },
   ];
+
   const handleChange = (e) => {
     setCurrentFlag(e.target.value);
   };
+
   const changeFlags = flags.find((flag) => flag.language1 === currentFlag);
+
   return (
     <div className="container-fluid bg-primary text-light mt-5">
       <Container className="py-5">

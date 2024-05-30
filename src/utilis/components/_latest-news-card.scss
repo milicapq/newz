@@ -1,6 +1,7 @@
 .card-img-overlay {
   background: linear-gradient(to bottom, transparent 20%, black 100%);
 }
+
 @media only screen and (min-width: 1200px) {
   .heightNews {
     height: 550px;
@@ -9,4 +10,16 @@
 
 .bi-play-circle::before {
   font-size: 100px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .borders {
+    border-top: 1px solid #c9c1c1;
+  }
+  .border-none {
+    border: unset !important;
+  }
+  .bi-play-circle::before {
+    font-size: 50px;
+  }
 }

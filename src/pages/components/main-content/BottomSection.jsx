@@ -22,9 +22,7 @@ function Column({ cardInfo, horizontalCardInfo }) {
       ))}
       {horizontalCardInfo.map((info, index) => (
         <div
-          className={`pe-4 py-2 mt-2 ${
-            info?.id >= 10 ? "border-0" : "border-end"
-          }`}
+          className={`pe-4 mt-3 ${info?.id >= 10 ? "border-0" : "border-end"}`}
           key={index}
         >
           <HorizontalCard info={info} />
@@ -38,17 +36,19 @@ export default function BottomSection() {
     <Container>
       <Row className="border-top mt-3">
         <Col lg={12}>
-          <Row className="d-flex justify-content-between pt-5 pb-3 fw-bold">
-            <Col>
-              BUSINESS <SlArrowRight className="mb-1" />
-            </Col>
-            <Col>
-              POLITICS <SlArrowRight className="mb-1" />
-            </Col>
-            <Col>
-              MARKET <SlArrowRight className="mb-1" />
-            </Col>
-          </Row>
+          <div className="d-none d-lg-block">
+            <Row className="d-flex justify-content-between pt-5 pb-3 fw-bold">
+              <Col>
+                BUSINESS <SlArrowRight className="mb-1" />
+              </Col>
+              <Col>
+                POLITICS <SlArrowRight className="mb-1" />
+              </Col>
+              <Col>
+                MARKET <SlArrowRight className="mb-1" />
+              </Col>
+            </Row>
+          </div>
         </Col>
         {bottomInfo.map((column, index) => (
           <Col md={12} lg={4} className="mt-2" key={index}>

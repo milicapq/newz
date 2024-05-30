@@ -9,7 +9,7 @@ import { topVideosOverCard } from "../../../data/TopVideosOverCard";
 
 export default function TopVideos() {
   return (
-    <div className="container-fluid bg-dark p-3 py-5">
+    <div className="container-fluid bg-dark p-lg-3 py-lg-5">
       <Container className="container py-3">
         <div className="py-4">
           <span className="text-light">TOP VIDEOS LAST WEEK</span>
@@ -20,11 +20,11 @@ export default function TopVideos() {
             <TextOverCard TextOverCardInfo={topVideosOverCard} />
           </Col>
           <Col lg={4} className="px-lg-4 video-underline">
-            <p className="text-light ms-2 ms-lg-0 mt-md-4 mt-lg-0">
+            <p className="text-light ms-2 ms-md-0 mt-md-4 mt-lg-0">
               VIDEOS UP NEXT
             </p>
             {nextVideos.map((video, index) => (
-              <div className="pt-3 pb-1" key={video.label}>
+              <div className="pt-lg-3 pb-lg-1" key={video.label}>
                 <HorizontalCard info={video} underline={index === 0} />
               </div>
             ))}

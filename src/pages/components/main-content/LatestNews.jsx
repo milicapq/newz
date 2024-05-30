@@ -10,8 +10,8 @@ import { TextOverCardInfo } from "../../../data/TextOverCardData";
 
 export default function LatestNews({ infos = [], trendingNews = [] }) {
   return (
-    <Container className="border-top py-4 mt-3">
-      <Row className="mt-5">
+    <Container className="border-top py-4 mt-3 border-none">
+      <Row className="mt-lg-5">
         <Col lg={5}>
           <div className="d-flex">
             <p className="fw-bold pb-3">LATEST NEWS</p>

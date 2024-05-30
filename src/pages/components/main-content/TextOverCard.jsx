@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import PageNavigation from "./PageNavigation";
 import Sticker from "./Sticker";
 import DateUserComment from "./DateUserComment";
-// import { TextOverCardInfo } from "../../../data/TextOverCardData";
 
 export default function TextOverCard({ latestNews, TextOverCardInfo }) {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -35,7 +34,7 @@ export default function TextOverCard({ latestNews, TextOverCardInfo }) {
               alt="..."
             />
             <div
-              className="card-img-overlay d-flex flex-column justify-content-between px-5 mt-2"
+              className="card-img-overlay d-flex flex-column justify-content-between px-md-5 mt-md-2"
               key={overCard.pagination}
             >
               <div className="d-flex justify-content-between">

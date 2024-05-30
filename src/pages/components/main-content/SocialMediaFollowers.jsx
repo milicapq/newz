@@ -2,7 +2,7 @@ import React from "react";
 
 export default function SocialMediaFollowers() {
   return (
-    <div className="card rounded-0 mt-4 p-3">
+    <div className="card rounded-0 mt-4 p-lg-3">
       <div className="card-body">
         <div className="border-bottom pb-2">
           <img

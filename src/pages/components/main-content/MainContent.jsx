@@ -8,7 +8,7 @@ export default function MainContent() {
     <Container className="mt-5 px-0">
       <Row className="mb-4">
         {news.slice(0, 2).map((newz) => (
-          <Col md={6} key={newz.id}>
+          <Col md={6} key={newz.id} className="mt-3 mt-md-0">
             <div
               className={`px-3  ${
                 (newz?.id == 2 && "border-end-0") ||

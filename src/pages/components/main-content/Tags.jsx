@@ -18,8 +18,8 @@ export default function Tags() {
     setActive(button === active ? null : button);
   };
   return (
-    <div className="border-top mt-4 py-4 pointer">
-      <p className="fw-bold mt-3">HOT TAGS TODAY</p>
+    <div className="border-top mt-lg-4 py-lg-4 pointer border-none">
+      <p className="fw-bold mt-3 ms-md-4 ms-lg-0">HOT TAGS TODAY</p>
       <div className="card rounded-0 mt-4">
         <div className="card-body d-flex flex-wrap p-4">
           {buttons.map((button) => (

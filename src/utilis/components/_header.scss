@@ -4,9 +4,11 @@
   box-sizing: border-box;
   margin: 0;
 }
+
 .pointer {
   cursor: pointer;
 }
+
 .header {
   .border-bottom {
     border-bottom: 2px solid black !important;
@@ -20,6 +22,7 @@ h6 {
   color: #e5e9ec;
   font-weight: 700;
 }
+
 .font-color {
   color: #c0c0c0;
   font-size: 12px;
@@ -30,11 +33,13 @@ li {
     color: #000000;
   }
 }
+
 @media only screen and (min-width: 992px) {
   .underline {
     border-bottom: 1px solid #000000;
   }
 }
+
 .dropdown-item {
   input {
     background-color: #ffff;
@@ -44,6 +49,7 @@ li {
     color: #000000;
   }
 }
+
 input,
 .header-newsletter {
   background-color: #44677b;
@@ -52,13 +58,16 @@ input,
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
 }
+
 .header-newsletter {
   width: 65%;
   padding: 8px 0 8px 0;
 }
+
 .header-newsletter:hover {
   cursor: pointer;
 }
+
 .header-newsletter span {
   width: 40px;
   height: 40px;

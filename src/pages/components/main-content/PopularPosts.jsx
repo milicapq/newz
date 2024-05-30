@@ -31,7 +31,7 @@ export default function PopularPosts() {
     }
   };
   return (
-    <Container className="border-top px-0 py-2 mb-3">
+    <Container className="border-top px-lg-0 py-2 mb-3">
       <Row className="mt-4">
         <Col lg={3} md={6} className="mt-2 border-end">
           <span className="fw-bold">POPULAR POSTS</span>
@@ -42,11 +42,11 @@ export default function PopularPosts() {
           ))}
           <img
             src="/popular-posts-img/advertisment1.png"
-            className="mt-4"
+            className="mt-4 px-4 px-md-2 ms-2 ms-md-0"
             alt=""
           />
         </Col>
-        <Col lg={6} md={6} className="mt-2 border-end px-4">
+        <Col lg={6} md={6} className="mt-md-2 mt-3 border-end px-4">
           <span className="fw-bold"> RECENTLY POSTS</span>
           {recentlyPosts.slice(0, 3).map((post) => (
             <div className="mt-4" key={post.id}>
@@ -66,13 +66,17 @@ export default function PopularPosts() {
             </div>
           ))}
         </Col>
-        <Col lg={3} md={12} className="mt-2 border-start px-4">
+        <Col
+          lg={3}
+          md={12}
+          className="mt-2 border-start px-4 borders border-none"
+        >
           <Row>
             <Col md={6} lg={12} className="pointer">
-              <span className="fw-bold">STAY CONNECTED</span>
+              <p className="fw-bold mt-md-3 mt-lg-0">STAY CONNECTED</p>
               <SocialMediaFollowers />
             </Col>
-            <Col md={6} lg={12} className="py-4">
+            <Col md={6} lg={12} className="py-lg-4">
               <Tags />
             </Col>
           </Row>

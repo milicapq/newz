@@ -5,10 +5,10 @@ import { SlArrowLeft } from "react-icons/sl";
 export default function PageNavigation({ handleNextClick, handlePrevClick }) {
   return (
     <nav aria-label="Page navigation example">
-      <ul className="pagination m-auto p-1">
-        <li className="page-item px-1">
+      <ul className="pagination m-auto p-md-1">
+        <li className="page-item px-md-1">
           <a
-            className="page-link"
+            className="page-link p-0 p-md-2"
             href="#"
             aria-label="Previous"
             onClick={handlePrevClick}
@@ -20,7 +20,7 @@ export default function PageNavigation({ handleNextClick, handlePrevClick }) {
         </li>
         <li className="page-item">
           <a
-            className="page-link"
+            className="page-link p-0 p-md-2"
             href="#"
             aria-label="Next"
             onClick={handleNextClick}
