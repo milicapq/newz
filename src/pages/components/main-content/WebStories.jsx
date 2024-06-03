@@ -8,7 +8,7 @@ export default function WebStories() {
         <img
           className="w-25 rounded-circle p-1 mb-2 border border-danger"
           src="/Untitled1.png"
-          alt=""
+          alt="Web stories"
         />
         <span className="px-3">Kayak stories</span>
       </div>
@@ -16,7 +16,7 @@ export default function WebStories() {
         <img
           className="w-25 rounded-circle p-1 border border-muted"
           src="/Untitled1.png"
-          alt=""
+          alt="Web stories"
         />
         <span className="px-3">6 Tips Successful</span>
       </div>
@@ -24,7 +24,7 @@ export default function WebStories() {
         <img
           className="w-25 mt-2 rounded-circle p-1 border border-danger"
           src="/Untitled1.png"
-          alt=""
+          alt="Web stories"
         />
         <span className="px-3">PS Controller</span>
       </div>

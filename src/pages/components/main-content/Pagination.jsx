@@ -33,7 +33,7 @@ export default function Pagination() {
     <div className="container mt-4 px-3">
       <div className="d-block d-md-flex align-items-center justify-content-between bg-secondary">
         <Sticker label={"Breaking News"}>
-          <img className="p-2" src="/thunder.svg" alt="" />
+          <img className="p-2" src="/thunder.svg" alt="Thunder icon" />
         </Sticker>
         <div className="pagination-text d-flex align-items-center bg-secondary me-lg-4">
           <div className="pag d-flex align-items-center justify-content-center p-lg-2 me-lg-5">

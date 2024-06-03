@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { Col, Container, Row, Card } from "react-bootstrap";
-import { columnists } from "../../../data/ColumnistsData";
+import { Col, Container, Row } from "react-bootstrap";
 import { SlArrowRight } from "react-icons/sl";
 import PageNavigation from "./PageNavigation";
 
-export default function TopColumnist() {
+export default function TopColumnist({ columnists = [] }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handlePrevClicks = (e) => {
@@ -21,7 +20,7 @@ export default function TopColumnist() {
     e.preventDefault();
   };
   return (
-    <Container className="mt-5 border-bottom mb-3 border-none">
+    <Container className="mt-5 border-bottom mb-3 border-none pe-md-5 pe-3">
       <Row className="mb-4">
         <Col xs={10} md={11}>
           <div className="py-2">
@@ -51,7 +50,7 @@ export default function TopColumnist() {
                   <img
                     className="w-25 rounded-circle mb-3"
                     src={columnist.img}
-                    alt=""
+                    alt="Columnist image"
                   />
                   <h5 className="fw-bold py-2">{columnist.name}</h5>
                   <span className="text-muted">Specialize in</span>
@@ -66,7 +65,7 @@ export default function TopColumnist() {
         </Row>
       </div>
       <div className="d-lg-none d-block">
-        <Row className="mb-5">
+        <Row className="mb-md-5">
           {columnists.slice(currentIndex, currentIndex + 3).map((columnist) => (
             <Col
               md={4}
@@ -79,7 +78,7 @@ export default function TopColumnist() {
                   <img
                     className="w-25 rounded-circle mb-3"
                     src={columnist.img}
-                    alt=""
+                    alt="Columnist image"
                   />
                   <h5 className="fw-bold py-2">{columnist.name}</h5>
                   <span className="text-muted">Specialize in</span>

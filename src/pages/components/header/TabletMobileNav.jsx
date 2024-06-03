@@ -10,7 +10,7 @@ export default function TabletMobileNav() {
       <div className="container-fluid">
         <div className="container d-flex justify-content-between align-items-center">
           <a className="navbar-brand" href="#">
-            <img className="p-1" src="/Untitled.png" alt="" />
+            <img className="p-1" src="/Untitled.png" alt="Logo" />
           </a>
           <Calender />
           <Weather />
@@ -32,7 +32,7 @@ export default function TabletMobileNav() {
           >
             <div className="offcanvas-header border border-muted">
               <h5 className="offcanvas-title" id="offcanvasNavbarLabel">
-                <img className="p-1" src="/Untitled.png" alt="" />
+                <img className="p-1" src="/Untitled.png" alt="Logo" />
               </h5>
               <button
                 type="button"

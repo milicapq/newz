@@ -5,7 +5,11 @@
 @media only screen and (min-width: 1200px) {
   .heightNews {
     height: 550px;
+    width: 100%;
   }
+}
+.full-width {
+  width: 100%;
 }
 
 .bi-play-circle::before {

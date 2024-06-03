@@ -24,16 +24,22 @@ export default function Card({ newz }) {
         {newz.popularPost ? (
           <h5 className="fw-bold my-2">{newz.title}</h5>
         ) : (
-          <h3 className="fw-bold my-3">{newz.title}</h3>
+          <h3 className={`${newz.id <= 2 ? "cardFont" : ""} fw-bold my-3`}>
+            {newz.title}
+          </h3>
         )}
-        <p className={`${newz?.id > 2 && "d-none"}`}>{newz.content}</p>
+        <p className={`${newz?.id > 2 && "d-none"} text-muted`}>
+          {newz.content}
+        </p>
         <DateUserComment newz={newz} />
       </div>
-      <img
-        src={newz?.img}
-        className={`${newz.popularPost ? "pe-0 mb-3" : "pe-3"}`}
-        alt=""
-      />
+      {newz.img && (
+        <img
+          src={newz?.img}
+          className={`${newz.popularPost ? "pe-0 mb-3" : "pe-md-3"}`}
+          alt="Newz image"
+        />
+      )}
     </div>
   );
 }

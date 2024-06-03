@@ -2,14 +2,13 @@ import React from "react";
 import TextOverCard from "./TextOverCard";
 import { Row, Col, Container } from "react-bootstrap";
 import HorizontalCard from "./HorizontalCard";
-import { nextVideos } from "../../../data/NextVideos";
 import { SlArrowRight } from "react-icons/sl";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { topVideosOverCard } from "../../../data/TopVideosOverCard";
 
-export default function TopVideos() {
+export default function TopVideos({ nextVideos = [] }) {
   return (
-    <div className="container-fluid bg-dark p-lg-3 py-lg-5">
+    <div className="container-fluid bg-dark p-lg-3 py-lg-5 top-videos">
       <Container className="container py-3">
         <div className="py-4">
           <span className="text-light">TOP VIDEOS LAST WEEK</span>
@@ -20,9 +19,7 @@ export default function TopVideos() {
             <TextOverCard TextOverCardInfo={topVideosOverCard} />
           </Col>
           <Col lg={4} className="px-lg-4 video-underline">
-            <p className="text-light ms-2 ms-md-0 mt-md-4 mt-lg-0">
-              VIDEOS UP NEXT
-            </p>
+            <p className="text-light ms-md-0 mt-4 mt-lg-0">VIDEOS UP NEXT</p>
             {nextVideos.map((video, index) => (
               <div className="pt-lg-3 pb-lg-1" key={video.label}>
                 <HorizontalCard info={video} underline={index === 0} />

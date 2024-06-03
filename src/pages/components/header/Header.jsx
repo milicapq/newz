@@ -28,7 +28,7 @@ export default function Header() {
         <div className="d-flex justify-content-between">
           <Row>
             <Col xs={4}>
-              <img className="p-1 pointer" src="/Untitled.png" alt="" />
+              <img className="p-1 pointer" src="/Untitled.png" alt="Logo" />
             </Col>
             <Col xs={4}>
               <Calender />

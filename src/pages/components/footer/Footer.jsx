@@ -35,9 +35,9 @@ export default function Footer() {
             <FooterInfo />
           </Col>
           <Col xs={4} md={2} className="py-4">
-            <h3 className="mb-2 fw-bold pointer pb-3">Topics</h3>
+            <h3 className="mb-2 pb-3 fw-bold pointer">Topics</h3>
             {topics.map((topic, index) => (
-              <h6 className="mt-4 pointer" key={index}>
+              <h6 className="mt-4 pointer topic" key={index}>
                 {topic}
               </h6>
             ))}
@@ -45,12 +45,12 @@ export default function Footer() {
           <Col xs={4} md={2} lg={2} className="py-4">
             <h3 className="pb-3 fw-bold pointer">Help</h3>
             {help.map((item, index) => (
-              <h6 className="mt-4 pointer" key={index}>
+              <h6 className="mt-4 pointer item" key={index}>
                 {item}
               </h6>
             ))}
           </Col>
-          <Col xs={12} lg={3} md={12} className="py-4">
+          <Col xs={12} md={12} lg={3} className="py-4">
             <h3 className="fw-bold pointer pb-3">Newsletter</h3>
             <p className="my-4 pointer">
               Register now to get latest updates on promotions & coupons.
@@ -66,7 +66,11 @@ export default function Footer() {
         </Row>
         <Row>
           <Col xs={12} md={12} lg={3}>
-            <img className="me-4 pointer" src="/logo-dark.png" alt="" />
+            <img
+              className="me-4 pointer"
+              src="/logo-dark.png"
+              alt="Dark logo"
+            />
           </Col>
           <Col lg={7} xs={6} md={8} className="mt-3 pointer">
             <span>
@@ -80,7 +84,7 @@ export default function Footer() {
                 <img
                   className="flag rounded-circle me-2"
                   src={changeFlags.image}
-                  alt=""
+                  alt="Flags"
                 />
               )}
               <select

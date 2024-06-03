@@ -11,18 +11,23 @@ import TopColumnist from "./pages/components/main-content/TopColumnist";
 import TopVideos from "./pages/components/main-content/TopVideos";
 import { infos } from "./data/LatestNewsData";
 import { trendingNews } from "./data/TrendingNewsData";
+import { news } from "./data/News";
+import { popularPosts } from "./data/PopularPostsData";
+import { recentlyPosts } from "./data/RecentlyPostsData.jsx";
+import { nextVideos } from "./data/NextVideos";
+import { columnists } from "./data/ColumnistsData";
 
 function App() {
   return (
     <div className="App">
       <Header />
       <Pagination />
-      <MainContent />
+      <MainContent news={news} />
       <Advertisement />
       <LatestNews infos={infos} trendingNews={trendingNews} />
-      <PopularPosts />
-      <TopVideos />
-      <TopColumnist />
+      <PopularPosts popularPosts={popularPosts} recentlyPosts={recentlyPosts} />
+      <TopVideos nextVideos={nextVideos} />
+      <TopColumnist columnists={columnists} />
       <Advertisement />
       <BottomSection />
       <Footer />

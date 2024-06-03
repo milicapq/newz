@@ -27,16 +27,13 @@ export default function TextOverCard({ latestNews, TextOverCardInfo }) {
     >
       {TextOverCardInfo.slice(currentIndex, currentIndex + 1).map(
         (overCard) => (
-          <>
+          <div key={overCard.pagination}>
             <img
               src={overCard?.img}
-              className={`${latestNews && "heightNews"}`}
-              alt="..."
+              className={`${latestNews && "heightNews"} full-width`}
+              alt="Overcard img"
             />
-            <div
-              className="card-img-overlay d-flex flex-column justify-content-between px-md-5 mt-md-2"
-              key={overCard.pagination}
-            >
+            <div className="card-img-overlay d-flex flex-column justify-content-between px-md-5 mt-md-2">
               <div className="d-flex justify-content-between">
                 <Sticker label={"BUSINESS"} />
                 {overCard.pagination && (
@@ -55,7 +52,7 @@ export default function TextOverCard({ latestNews, TextOverCardInfo }) {
                 <DateUserComment lightDate={true} newz={overCard} />
               </div>
             </div>
-          </>
+          </div>
         )
       )}
     </div>

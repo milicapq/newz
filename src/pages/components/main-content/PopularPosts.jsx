@@ -10,12 +10,13 @@ import {
 import WebStories from "./WebStories";
 import Tags from "./Tags";
 import HorizontalCard from "./HorizontalCard";
-import { recentlyPosts } from "../../../data/RecentlyPostsData";
 import SocialMediaFollowers from "./SocialMediaFollowers";
 import { RecentlyPostsTextOver } from "../../../data/RecentlyPostsTextOverData";
-import { TextOverCardInfo } from "../../../data/TextOverCardData";
 
-export default function PopularPosts() {
+export default function PopularPosts({
+  popularPosts = [],
+  recentlyPosts = [],
+}) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const handlePrevClick = (e) => {
     if (currentIndex > 0) {
@@ -34,20 +35,20 @@ export default function PopularPosts() {
     <Container className="border-top px-lg-0 py-2 mb-3">
       <Row className="mt-4">
         <Col lg={3} md={6} className="mt-2 border-end">
-          <span className="fw-bold">POPULAR POSTS</span>
+          <span className="fw-bold ms-2 ms-md-0">POPULAR POSTS</span>
           {popularPosts.map((newz, index) => (
-            <div className="mt-4" key={index}>
+            <div className="mt-4 px-1 ms-2 px-md-0 ms-md-0" key={index}>
               <Card newz={newz} />
             </div>
           ))}
           <img
             src="/popular-posts-img/advertisment1.png"
-            className="mt-4 px-4 px-md-2 ms-2 ms-md-0"
-            alt=""
+            className="mt-4 px-2 ms-md-0 ms-4"
+            alt="Popular post image"
           />
         </Col>
         <Col lg={6} md={6} className="mt-md-2 mt-3 border-end px-4">
-          <span className="fw-bold"> RECENTLY POSTS</span>
+          <p className="fw-bold mt-3 mt-md-0"> RECENTLY POSTS</p>
           {recentlyPosts.slice(0, 3).map((post) => (
             <div className="mt-4" key={post.id}>
               <HorizontalCard info={post} />

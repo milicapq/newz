@@ -28,7 +28,11 @@ export default function HorizontalCard({ info, underline }) {
         </Col>
         <Col xs={4}>
           {info?.img && (
-            <img src={info.img} className="img-fluid w-100" alt="..." />
+            <img
+              src={info.img}
+              className="img-fluid w-100"
+              alt="Horizontal card image"
+            />
           )}
         </Col>
       </Row>

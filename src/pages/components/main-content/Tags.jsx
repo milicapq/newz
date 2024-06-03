@@ -20,7 +20,7 @@ export default function Tags() {
   return (
     <div className="border-top mt-lg-4 py-lg-4 pointer border-none">
       <p className="fw-bold mt-3 ms-md-4 ms-lg-0">HOT TAGS TODAY</p>
-      <div className="card rounded-0 mt-4">
+      <div className="card rounded-0 mt-4 px-4 px-md-0 ms-md-3 ms-lg-0">
         <div className="card-body d-flex flex-wrap p-4">
           {buttons.map((button) => (
             <div

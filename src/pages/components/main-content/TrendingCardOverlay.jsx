@@ -8,7 +8,7 @@ export default function TrendingCardOverlay() {
       <img
         src="/bottom-part-img/chess.png"
         className="height-trending-card"
-        alt="..."
+        alt="Chess"
       />
       <div className="card-img-overlay d-flex flex-column justify-content-between">
         <div className="mt-auto">

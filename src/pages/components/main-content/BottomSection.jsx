@@ -5,24 +5,24 @@ import HorizontalCard from "./HorizontalCard";
 import { bottomInfo } from "../../../data/BottomSectionData";
 import { SlArrowRight } from "react-icons/sl";
 
-function Column({ cardInfo, horizontalCardInfo }) {
+function Column({ cardInfo = [], horizontalCardInfo = [], isLastColumn }) {
+  const lastColumn = isLastColumn ? "" : "border-end";
   return (
-    <div>
+    <div className={`${lastColumn} `}>
       {cardInfo.map((info, index) => (
-        <div
-          key={index}
-          className={`${info?.id == 9 ? "border-0" : "border-end"} `}
-        >
+        <div key={index}>
           <div className="d-flex mt-4 d-lg-none">
-            <h6 className="mb-4 text-dark">{info?.category}</h6>
+            <h6 className="mb-4 ms-2 ms-lg-0 text-dark">{info?.category}</h6>
             <SlArrowRight className="ms-3 mb-1" />
           </div>
-          <Card newz={info} />
+          <div className="ms-2 ms-lg-0 px-md-2 px-lg-0 pe-md-0">
+            <Card newz={info} />
+          </div>
         </div>
       ))}
       {horizontalCardInfo.map((info, index) => (
         <div
-          className={`pe-4 mt-3 ${info?.id >= 10 ? "border-0" : "border-end"}`}
+          className={`px-md-3 px-2 pe-md-4 px-lg-0 pe-lg-4 mt-3`}
           key={index}
         >
           <HorizontalCard info={info} />
@@ -55,6 +55,7 @@ export default function BottomSection() {
             <Column
               cardInfo={column.cardInfo}
               horizontalCardInfo={column.horizontalCardInfo}
+              isLastColumn={index === bottomInfo.length - 1}
             />
           </Col>
         ))}
