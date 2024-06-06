@@ -4,7 +4,7 @@ import { Row, Col, Container } from "react-bootstrap";
 import HorizontalCard from "./HorizontalCard";
 import { SlArrowRight } from "react-icons/sl";
 import { MdKeyboardArrowRight } from "react-icons/md";
-import { topVideosOverCard } from "../../../data/TopVideosOverCard";
+import { topVideosOverCard } from "../../data/TopVideosOverCard";
 
 export default function TopVideos({ nextVideos = [] }) {
   return (

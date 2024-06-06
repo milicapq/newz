@@ -6,7 +6,7 @@ import CardWithNum from "./CardWithNum";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { SlArrowRight } from "react-icons/sl";
 import TrendingCardOverlay from "./TrendingCardOverlay";
-import { TextOverCardInfo } from "../../../data/TextOverCardData";
+import { TextOverCardInfo } from "../../data/TextOverCardData";
 
 export default function LatestNews({ infos = [], trendingNews = [] }) {
   return (

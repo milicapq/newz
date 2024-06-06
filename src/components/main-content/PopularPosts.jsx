@@ -6,12 +6,12 @@ import SmallAdvertisement from "./SmallAdvertisement";
 import {
   popularPosts,
   popularPostsOverCard,
-} from "../../../data/PopularPostsData";
+} from "../../data/PopularPostsData";
 import WebStories from "./WebStories";
 import Tags from "./Tags";
 import HorizontalCard from "./HorizontalCard";
 import SocialMediaFollowers from "./SocialMediaFollowers";
-import { RecentlyPostsTextOver } from "../../../data/RecentlyPostsTextOverData";
+import { RecentlyPostsTextOver } from "../../data/RecentlyPostsTextOverData";
 
 export default function PopularPosts({
   popularPosts = [],

@@ -2,7 +2,7 @@ import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import Card from "./Card";
 import HorizontalCard from "./HorizontalCard";
-import { bottomInfo } from "../../../data/BottomSectionData";
+import { bottomInfo } from "../../data/BottomSectionData";
 import { SlArrowRight } from "react-icons/sl";
 
 function Column({ cardInfo = [], horizontalCardInfo = [], isLastColumn }) {
