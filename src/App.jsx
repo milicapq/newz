@@ -1,37 +1,26 @@
 import "./assets/App.scss";
 import "./assets/App.js";
-import Footer from "./components/footer/Footer";
-import Header from "./components/header/Header";
-import Advertisement from "./components/main-content/Advertisement";
-import BottomSection from "./components/main-content/BottomSection";
-import LatestNews from "./components/main-content/LatestNews";
-import MainContent from "./components/main-content/MainContent";
-import Pagination from "./components/main-content/Pagination";
-import PopularPosts from "./components/main-content/PopularPosts";
-import TopColumnist from "./components/main-content/TopColumnist";
-import TopVideos from "./components/main-content/TopVideos";
-import { infos } from "./data/LatestNewsData";
-import { trendingNews } from "./data/TrendingNewsData";
-import { news } from "./data/News";
-import { popularPosts } from "./data/PopularPostsData";
-import { recentlyPosts } from "./data/RecentlyPostsData.jsx";
-import { nextVideos } from "./data/NextVideos";
-import { columnists } from "./data/ColumnistsData";
+import { Route, Routes } from "react-router";
+import NewsCategory from "./page/news/NewsCategory.jsx";
+import HomePage from "./page/HomePage.jsx";
+import BusinessCategory from "./page/news/BusinessCategory.jsx";
+import PoliticCategory from "./page/news/PoliticCategory.jsx";
+import MarketCategory from "./page/news/MarketCategory.jsx";
+import TechCategory from "./page/news/TechCategory.jsx";
+import Header from "./components/header/Header.jsx";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Pagination />
-      <MainContent news={news} />
-      <Advertisement />
-      <LatestNews infos={infos} trendingNews={trendingNews} />
-      <PopularPosts popularPosts={popularPosts} recentlyPosts={recentlyPosts} />
-      <TopVideos nextVideos={nextVideos} />
-      <TopColumnist columnists={columnists} />
-      <Advertisement />
-      <BottomSection />
-      <Footer />
+      <Routes>
+        <Route path="/homepage" Component={HomePage} />
+        <Route path="/newscategory" Component={NewsCategory} />
+        <Route path="/techcategory" Component={TechCategory} />
+        <Route path="/businesscategory" Component={BusinessCategory} />
+        <Route path="/politiccategory" Component={PoliticCategory} />
+        <Route path="/marketcategory" Component={MarketCategory} />
+      </Routes>
     </div>
   );
 }

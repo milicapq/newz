@@ -7,8 +7,10 @@ import HeaderIcons from "./HeaderIcons";
 import { Col, Container, Row } from "react-bootstrap";
 import TabletMobileNav from "./TabletMobileNav";
 import SearchHeader from "./SearchHeader";
+import { useNavigate } from "react-router-dom";
 
 export default function Header() {
+  const navigate = useNavigate();
   return (
     <div className="header">
       <div className="container-fluid bg-primary d-flex justify-content-center align-items-center d-xs-none">
@@ -28,7 +30,12 @@ export default function Header() {
         <div className="d-flex justify-content-between">
           <Row>
             <Col xs={4}>
-              <img className="p-1 pointer" src="/Untitled.png" alt="Logo" />
+              <img
+                className="p-1 pointer"
+                src="/Untitled.png"
+                alt="Logo"
+                onClick={() => navigate("/homepage")}
+              />
             </Col>
             <Col xs={4}>
               <Calender />

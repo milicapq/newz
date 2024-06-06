@@ -2,7 +2,13 @@ import React from "react";
 import { MdKeyboardArrowDown } from "react-icons/md";
 
 export default function Navbar() {
-  const navbar = ["News", "Tech", "Business", "Politic", "Market"];
+  const navbar = [
+    { title: "News", link: "/newscategory" },
+    { title: "Tech", link: "/techcategory" },
+    { title: "Business", link: "/businesscategory" },
+    { title: "Politic", link: "/politiccategory" },
+    { title: "Market", link: "/marketcategory" },
+  ];
   const dropdown = ["Demo", "Features", "Shop"];
   return (
     <ul className="nav py-1 mt-lg-2 d-flex flex-column flex-lg-row gap-3">
@@ -47,8 +53,8 @@ export default function Navbar() {
           ) : (
             ""
           )}
-          <a className="nav-link px-0 px-lg-2 m-md-2 mt-2" href="#">
-            {nav}
+          <a className="nav-link px-0 px-lg-2 m-md-2 mt-2" href={nav.link}>
+            {nav.title}
           </a>
         </li>
       ))}
