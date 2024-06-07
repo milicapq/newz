@@ -20,7 +20,6 @@ import Footer from "../components/footer/Footer.jsx";
 export default function HomePage() {
   return (
     <>
-      {/* <Header /> */}
       <Pagination />
       <MainContent news={news} />
       <Advertisement />

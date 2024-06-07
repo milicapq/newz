@@ -34,7 +34,7 @@ export default function Header() {
                 className="p-1 pointer"
                 src="/Untitled.png"
                 alt="Logo"
-                onClick={() => navigate("/homepage")}
+                onClick={() => navigate("/")}
               />
             </Col>
             <Col xs={4}>

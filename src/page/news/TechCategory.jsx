@@ -3,8 +3,7 @@ import "./../../assets/App.scss";
 
 function TechCategory() {
   return (
-    <div>
-      {/* <Header></Header> */}
+    <div className="d-flex justify-content-center align-items-center">
       Under construction!
     </div>
   );

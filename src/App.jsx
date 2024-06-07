@@ -8,13 +8,19 @@ import PoliticCategory from "./page/news/PoliticCategory.jsx";
 import MarketCategory from "./page/news/MarketCategory.jsx";
 import TechCategory from "./page/news/TechCategory.jsx";
 import Header from "./components/header/Header.jsx";
-
+const NavigationLayout = () => {
+  return (
+    <>
+      <HomePage />
+    </>
+  );
+};
 function App() {
   return (
     <div className="App">
       <Header />
       <Routes>
-        <Route path="/homepage" Component={HomePage} />
+        <Route path="/" Component={NavigationLayout} />
         <Route path="/newscategory" Component={NewsCategory} />
         <Route path="/techcategory" Component={TechCategory} />
         <Route path="/businesscategory" Component={BusinessCategory} />
